@@ -1,0 +1,215 @@
+{
+  "sharp": {
+    "sections": [
+      {
+        "id": "intro",
+        "title": "Foco para arrancar y seguir",
+        "text": "SHARP está pensado para acompañarte cuando necesitás concentrarte, empezar el día con claridad o encarar una tarea exigente.",
+        "text-2": "Combina cafeína natural, aminoácidos, citicolina, acetil-L-carnitina, taurina, CoQ10, extractos botánicos y vitaminas en un solo sobre.",
+        "image": "/images/products/sharp-content-1.png"
+      },
+      {
+        "id": "como-tomar",
+        "title": "Tomalo antes de que lo necesites",
+        "text": "Tomalo por la mañana, a media mañana o entre 40 y 60 minutos antes de una tarea exigente. Como contiene cafeína, evitá tomarlo cerca de la noche.",
+        "text-2": "Sabor naranja. Sobres individuales. Cajas de 15 o 30 sobres.",
+        "image": "/images/products/sharp-content-2.png",
+        "advertencia": "Solo para mayores de 18 años. No se recomienda durante el embarazo ni antes de una cirugía. SHARP contiene cafeína. Si tenés una condición de salud, tomás medicación o tenés dudas, consultá con un profesional."
+      }
+    ],
+    "formulas": [
+      {
+        "name": "Cafeína natural",
+        "tag": "energía",
+        "description": "Aporta energía y ayuda a mantener el estado de alerta."
+      },
+      {
+        "name": "L-teanina",
+        "tag": "foco",
+        "description": "Acompaña el foco y la concentración."
+      },
+      {
+        "name": "L-tirosina",
+        "tag": "cognición",
+        "description": "Aporta un aminoácido involucrado en la producción de neurotransmisores."
+      },
+      {
+        "name": "Citicolina (CDP-colina)",
+        "tag": "cognición",
+        "description": "Aporta colina, relacionada con la función cognitiva."
+      },
+      {
+        "name": "Acetil-L-carnitina (ALCAR)",
+        "tag": "energía",
+        "description": "Participa en el metabolismo energético."
+      },
+      {
+        "name": "Taurina",
+        "tag": "equilibrio",
+        "description": "Participa en distintos procesos celulares."
+      },
+      {
+        "name": "CoQ10 ubiquinol",
+        "tag": "antioxidante",
+        "description": "Participa en la producción de energía celular y aporta acción antioxidante."
+      },
+      {
+        "name": "Extracto de té verde descafeinado",
+        "tag": "antioxidante",
+        "description": "Aporta antioxidantes, incluido EGCG."
+      },
+      {
+        "name": "Vitamina B3, niacinamida",
+        "tag": "metabolismo",
+        "description": "Contribuye al metabolismo energético normal."
+      },
+      {
+        "name": "Vitamina B6, P-5-P",
+        "tag": "sistema nervioso",
+        "description": "Contribuye al funcionamiento normal del sistema nervioso."
+      },
+      {
+        "name": "Panax ginseng",
+        "tag": "vitalidad",
+        "description": "Aporta ginsenósidos, compuestos característicos del ginseng."
+      }
+    ]
+  },
+  "hydrate": {
+    "sections": [
+      {
+        "id": "intro",
+        "title": "No busca darte un pico. Ese es el punto.",
+        "text": "HYDRATE no está pensado para generar un efecto inmediato. Acompaña la hidratación durante el día, especialmente cuando tomás poca agua o te cuesta sostener ese hábito mientras seguís con tus actividades.",
+        "text-2": null,
+        "image": "/images/products/hydrate-content-1.png"
+      },
+      {
+        "id": "como-tomar",
+        "title": "TOMALO con el almuerzo.",
+        "text": "Tomalo durante el día, idealmente con el almuerzo. Evitá usarlo después de las 19:00.",
+        "text-2": "Sabor lima-limón. Sobres individuales. Cajas de 15 o 30 sobres.",
+        "image": "/images/products/hydrate-content-2.jpg",
+        "advertencia": "No se recomienda en casos de hipertensión severa. Si tenés una condición de salud, tomás medicación o tenés dudas, consultá con un profesional."
+      }
+    ],
+    "formulas": [
+      {
+        "name": "Sodio",
+        "tag": "hidratación",
+        "description": "Ayuda a mantener el equilibrio de líquidos y electrolitos."
+      },
+      {
+        "name": "Potasio",
+        "tag": "electrolitos",
+        "description": "Contribuye al funcionamiento normal de músculos y sistema nervioso."
+      },
+      {
+        "name": "Citrato de calcio",
+        "tag": "minerales",
+        "description": "Contribuye al funcionamiento normal de músculos y huesos."
+      },
+      {
+        "name": "Bisglicinato de magnesio",
+        "tag": "equilibrio",
+        "description": "Contribuye al funcionamiento normal de músculos y sistema nervioso."
+      },
+      {
+        "name": "Zinc",
+        "tag": "defensas",
+        "description": "Contribuye al funcionamiento normal del sistema inmunitario."
+      },
+      {
+        "name": "Taurina",
+        "tag": "equilibrio",
+        "description": "Participa en distintos procesos celulares."
+      },
+      {
+        "name": "Vitamina C",
+        "tag": "defensas",
+        "description": "Contribuye al funcionamiento normal del sistema inmunitario y a la protección antioxidante."
+      },
+      {
+        "name": "Extracto de semilla de uva",
+        "tag": "antioxidante",
+        "description": "Aporta compuestos antioxidantes presentes naturalmente en la uva."
+      },
+      {
+        "name": "L-glutamina",
+        "tag": "aminoácido",
+        "description": "Es un aminoácido que participa en distintos procesos del organismo."
+      }
+    ]
+  },
+  "reset": {
+    "sections": [
+      {
+        "id": "intro",
+        "title": "De la actividad al descanso",
+        "text": "RESET combina glicina, L-teanina, magnesio, taurina y extractos botánicos para acompañar la transición entre el final del día y el momento de dormir.",
+        "text-2": null,
+        "image": "/images/products/reset-content-1.jpg"
+      },
+      {
+        "id": "como-tomar",
+        "title": "Unos 40 minutos antes de dormir",
+        "text": "Tomalo aproximadamente 40 minutos antes de acostarte. El efecto empieza a sentirse entre 40 y 60 minutos después de tomarlo",
+        "text-2": "Sabor frutos rojos. Sobres individuales. Cajas de 15 o 30 sobres.",
+        "image": "/images/products/reset-content-2.jpg",
+        "advertencia": "Revisá todos los ingredientes antes de tomar RESET. Si tenés alergias, tomás medicación o tenés una condición de salud, consultá con un profesional."
+      }
+    ],
+    "formulas": [
+      {
+        "name": "Glicina",
+        "tag": "descanso",
+        "description": "Aporta un aminoácido que participa en distintos procesos del organismo."
+      },
+      {
+        "name": "L-teanina",
+        "tag": "calma",
+        "description": "Acompaña la relajación y ayuda a favorecer un estado de calma."
+      },
+      {
+        "name": "Bisglicinato de magnesio",
+        "tag": "equilibrio",
+        "description": "Contribuye al funcionamiento normal del sistema nervioso y muscular."
+      },
+      {
+        "name": "Taurina",
+        "tag": "balance",
+        "description": "Participa en distintos procesos celulares del organismo."
+      },
+      {
+        "name": "Extracto de lúpulo",
+        "tag": "relajación",
+        "description": "Tradicionalmente utilizado como apoyo para la relajación y el descanso."
+      },
+      {
+        "name": "Extracto de pasiflora",
+        "tag": "calma",
+        "description": "Tradicionalmente utilizada para acompañar la sensación de calma."
+      },
+      {
+        "name": "Extracto de melisa",
+        "tag": "relajación",
+        "description": "Tradicionalmente utilizada para favorecer la relajación."
+      },
+      {
+        "name": "Extracto de manzanilla, 1,2% apigenina",
+        "tag": "descanso",
+        "description": "Aporta compuestos vegetales asociados con la relajación."
+      },
+      {
+        "name": "Vitamina B6",
+        "tag": "sistema nervioso",
+        "description": "Contribuye al funcionamiento normal del sistema nervioso."
+      },
+      {
+        "name": "5-HTP",
+        "tag": "serotonina",
+        "description": "Es un precursor de la serotonina, involucrada en distintos procesos del organismo."
+      }
+    ]
+  }
+}

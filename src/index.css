@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+body {
+  background: linear-gradient(to right, #0d0d0d 0%, #1b1d1c 100%);
+}
+
+@font-face {
+  font-family: "Bristone";
+  src: url("./assets/fonts/Bristone.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-bristone: "Bristone", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Archivo", sans-serif;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

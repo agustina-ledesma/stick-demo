@@ -1,0 +1,238 @@
+{
+  "systems": [
+    {
+      "id": "sharp-hydrate",
+      "name": "SHARP + HYDRATE",
+      "title": "Foco sostenido",
+      "products": ["sharp", "hydrate"],
+      "image": "/images/systems/1.jpg",
+      "price": 17.0,
+
+      "sizes": [
+        {
+          "sticks": 15,
+          "price": 17.0
+        },
+        {
+          "sticks": 30,
+          "price": 30.6
+        }
+      ]
+    },
+    {
+      "id": "sharp-reset",
+      "name": "SHARP + RESET",
+      "title": "System circadiano",
+      "products": ["sharp", "reset"],
+      "image": "/images/systems/2.png",
+      "price": 17.0,
+      "sizes": [
+        {
+          "sticks": 15,
+          "price": 17.0
+        },
+        {
+          "sticks": 30,
+          "price": 30.6
+        }
+      ]
+    },
+    {
+      "id": "hydrate-reset",
+      "name": "HYDRATE + RESET",
+      "title": "Balance",
+      "products": ["hydrate", "reset"],
+      "image": "/images/systems/3.png",
+      "price": 17.0,
+      "sizes": [
+        {
+          "sticks": 15,
+          "price": 17.0
+        },
+        {
+          "sticks": 30,
+          "price": 30.6
+        }
+      ]
+    }
+  ],
+
+  "sharp": {
+    "id": "sharp",
+    "price": 10.0,
+    "name": "SHARP",
+    "description": "Hay días en que tenés tiempo, pero no conseguís sentarte a hacer una sola cosa. SHARP acompaña la atención y la energía mental cuando necesitás concentrarte: a la mañana, a media mañana o antes de una tarea exigente.",
+    "sizes": [
+      {
+        "sticks": 15,
+        "price": 10.0
+      },
+      {
+        "sticks": 30,
+        "price": 18.0
+      }
+    ],
+    "formula": [
+      "Cafeína natural",
+      "L-teanina",
+      "L-tirosina",
+      "Citicolina (CDP-colina)",
+      "Acetil-L-carnitina (ALCAR)",
+      "Taurina",
+      "CoQ10 ubiquinol",
+      "Extracto de té verde descafeinado, 50% EGCG",
+      "Vitamina B3, niacinamida",
+      "Vitamina B6, P-5-P",
+      "Panax ginseng, 4–7% ginsenósidos"
+    ],
+    "combinations": [
+      {
+        "id": "sharp-hydrate",
+        "name": "SHARP + HYDRATE",
+        "title": "Foco sostenido",
+        "image": "/images/systems/1.jpg",
+        "products": ["sharp", "hydrate"],
+        "price": 17.0
+      },
+      {
+        "id": "sharp-reset",
+        "name": "SHARP + RESET",
+        "title": "System circadiano",
+        "products": ["sharp", "reset"],
+        "image": "/images/systems/1.jpg",
+        "price": 17.0
+      }
+    ],
+    "images": [
+      "/images/products/sharp.png",
+      "/images/products/stix-jugo.png",
+      "/images/products/stix.png"
+    ]
+  },
+
+  "hydrate": {
+    "id": "hydrate",
+    "name": "HYDRATE",
+    "description": "Llegás al mediodía y te das cuenta de que casi no tomaste agua. HYDRATE combina electrolitos, minerales, taurina, vitamina C y otros activos para acompañar la hidratación durante el almuerzo y la tarde.",
+    "price": 10.0,
+    "sizes": [
+      {
+        "sticks": 15,
+        "price": 10.0
+      },
+      {
+        "sticks": 30,
+        "price": 18.0
+      }
+    ],
+    "formula": [
+      "Sodio",
+      "Potasio",
+      "Citrato de calcio",
+      "Bisglicinato de magnesio",
+      "Zinc",
+      "Taurina",
+      "Vitamina C",
+      "Extracto de semilla de uva",
+      "L-glutamina"
+    ],
+    "combinations": [
+      {
+        "id": "sharp-hydrate",
+        "name": "SHARP + HYDRATE",
+        "title": "Foco sostenido",
+        "products": ["sharp", "hydrate"],
+        "image": "/images/systems/1.jpg",
+        "price": 17.0
+      },
+      {
+        "id": "hydrate-reset",
+        "name": "HYDRATE + RESET",
+        "title": "Balance",
+        "products": ["hydrate", "reset"],
+        "image": "/images/systems/1.jpg",
+        "price": 17.0
+      }
+    ],
+    "images": [
+      "/images/products/hydrate.png",
+      "/images/products/stix-jugo.png",
+      "/images/products/stix.png"
+    ]
+  },
+
+  "reset": {
+    "id": "reset",
+    "name": "RESET",
+    "description": "Terminó el día, estás cansado y aún así seguís repasando pendientes. RESET acompaña el momento de bajar la actividad y preparar el cuerpo para descansar.",
+    "price": 10.0,
+    "sizes": [
+      {
+        "sticks": 15,
+        "price": 10.0
+      },
+      {
+        "sticks": 30,
+        "price": 18.0
+      }
+    ],
+    "formula": [
+      "Glicina",
+      "L-teanina",
+      "Bisglicinato de magnesio",
+      "Taurina",
+      "Extracto de lúpulo",
+      "Extracto de pasiflora",
+      "Extracto de melisa",
+      "Extracto de manzanilla, 1,2% apigenina",
+      "Vitamina B6",
+      "5-HTP"
+    ],
+    "combinations": [
+      {
+        "id": "hydrate-reset",
+        "name": "HYDRATE + RESET",
+        "title": "Balance",
+        "products": ["hydrate", "reset"],
+        "image": "/images/systems/1.jpg",
+        "price": 17.0
+      },
+      {
+        "id": "sharp-reset",
+        "name": "SHARP + RESET",
+        "title": "System circadiano",
+        "products": ["sharp", "reset"],
+        "image": "/images/systems/1.jpg",
+        "price": 17.0
+      }
+    ],
+    "images": [
+      "/images/products/reset.png",
+      "/images/products/stix-jugo.png",
+      "/images/products/stix.png"
+    ]
+  },
+
+  "oasis": {
+    "id": "oasis",
+    "name": "OASIS",
+    "description": "Oasis reúne SHARP, HYDRATE y RESET para que tengas una fórmula a mano cuando necesitás concentrarte, sostener la hidratación o preparar el descanso. Los comprás juntos y los usás según lo que te pida cada jornada.",
+    "title": "SHARP + HYDRATE + RESET",
+    "price": 22.5,
+    "images": [
+      "/images/oasis/1.png",
+      "/images/oasis/2.jpg",
+      "/images/oasis/3.png"
+    ],
+    "sizes": [
+      {
+        "sticks": 15,
+        "price": 22.5
+      },
+      {
+        "sticks": 30,
+        "price": 40.5
+      }
+    ]
+  }
+}
