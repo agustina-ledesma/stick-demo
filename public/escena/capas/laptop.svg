@@ -1,0 +1,166 @@
+<defs>
+  <!-- Cara superior de la base: de la esquina lejana (izquierda) hacia la bisagra (derecha) -->
+  <linearGradient id="laptop-g-sup__E" gradientUnits="userSpaceOnUse" x1="1110" y1="0" x2="1530" y2="0">
+    <stop offset="0" style="stop-color:var(--laptop-sup-1)"/>
+    <stop offset=".45" style="stop-color:var(--laptop-sup-2)"/>
+    <stop offset=".74" style="stop-color:var(--laptop-sup-3)"/>
+    <stop offset="1" style="stop-color:var(--laptop-sup-4)"/>
+  </linearGradient>
+  <!-- Reflejo de la luz sobre el aluminio: a la izquierda (amanecer, mediodía, noche) o corrido a la derecha (atardecer) -->
+  <radialGradient id="laptop-g-brillo-a__E" gradientUnits="userSpaceOnUse" cx="1316" cy="808" r="56">
+    <stop offset="0" style="stop-color:var(--laptop-brillo)"/>
+    <stop offset=".4" style="stop-color:var(--laptop-brillo)" stop-opacity=".55"/>
+    <stop offset="1" style="stop-color:var(--laptop-brillo)" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="laptop-g-brillo-b__E" gradientUnits="userSpaceOnUse" cx="1250" cy="826" r="64">
+    <stop offset="0" style="stop-color:var(--laptop-brillo)"/>
+    <stop offset=".4" style="stop-color:var(--laptop-brillo)" stop-opacity=".5"/>
+    <stop offset="1" style="stop-color:var(--laptop-brillo)" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="laptop-g-pad__E" gradientUnits="userSpaceOnUse" x1="1331" y1="0" x2="1520" y2="0">
+    <stop offset="0" style="stop-color:var(--laptop-pad)" stop-opacity="0"/>
+    <stop offset="1" style="stop-color:var(--laptop-pad)" stop-opacity=".95"/>
+  </linearGradient>
+  <linearGradient id="laptop-g-pozo__E" gradientUnits="userSpaceOnUse" x1="1336" y1="0" x2="1420" y2="0">
+    <stop offset="0" style="stop-color:var(--laptop-pozo)" stop-opacity=".25"/>
+    <stop offset="1" style="stop-color:var(--laptop-pozo)"/>
+  </linearGradient>
+  <!-- El apoyamanos del lado de la cámara queda más apagado que el fondo -->
+  <linearGradient id="laptop-g-frente__E" gradientUnits="userSpaceOnUse" x1="1300" y1="0" x2="1410" y2="0">
+    <stop offset="0" style="stop-color:var(--laptop-sup-frente)" stop-opacity="0"/>
+    <stop offset="1" style="stop-color:var(--laptop-sup-frente)"/>
+  </linearGradient>
+  <!-- Sombra de la tapa sobre la base (sólo atardecer) -->
+  <linearGradient id="laptop-g-sombra-base__E" gradientUnits="userSpaceOnUse" x1="1360" y1="0" x2="1525" y2="0">
+    <stop offset="0" style="stop-color:var(--laptop-sombra-base)" stop-opacity="0"/>
+    <stop offset="1" style="stop-color:var(--laptop-sombra-base)"/>
+  </linearGradient>
+  <!-- Canto de la base: el aluminio refleja la madera -->
+  <linearGradient id="laptop-g-lado__E" gradientUnits="userSpaceOnUse" x1="1110" y1="0" x2="1506" y2="0">
+    <stop offset="0" style="stop-color:var(--laptop-lado-1)"/>
+    <stop offset=".6" style="stop-color:var(--laptop-lado-2)"/>
+    <stop offset=".78" style="stop-color:var(--laptop-lado-3)"/>
+    <stop offset=".91" style="stop-color:var(--laptop-lado-3)"/>
+    <stop offset=".95" style="stop-color:var(--laptop-lado-4)"/>
+    <stop offset=".975" style="stop-color:var(--laptop-lado-3)"/>
+    <stop offset="1" style="stop-color:var(--laptop-lado-5)"/>
+  </linearGradient>
+  <linearGradient id="laptop-g-lado-vol__E" gradientUnits="userSpaceOnUse" x1="1300" y1="860.5" x2="1296.5" y2="884.2">
+    <stop offset="0" style="stop-color:var(--laptop-lado-luz)" stop-opacity=".95"/>
+    <stop offset=".1" style="stop-color:var(--laptop-lado-luz)" stop-opacity=".3"/>
+    <stop offset=".24" style="stop-color:var(--laptop-lado-luz)" stop-opacity="0"/>
+    <stop offset=".5" style="stop-color:var(--laptop-lado-som)" stop-opacity="0"/>
+    <stop offset=".8" style="stop-color:var(--laptop-lado-som)" stop-opacity=".55"/>
+    <stop offset="1" style="stop-color:var(--laptop-lado-som)" stop-opacity=".9"/>
+  </linearGradient>
+  <!-- Tapa vista de atrás: en sombra, más clara al centro y más oscura abajo -->
+  <linearGradient id="laptop-g-tapa__E" gradientUnits="userSpaceOnUse" x1="1640" y1="360" x2="1590" y2="915">
+    <stop offset="0" style="stop-color:var(--laptop-tapa-1)"/>
+    <stop offset=".45" style="stop-color:var(--laptop-tapa-2)"/>
+    <stop offset=".62" style="stop-color:var(--laptop-tapa-2)"/>
+    <stop offset=".82" style="stop-color:var(--laptop-tapa-3)"/>
+    <stop offset="1" style="stop-color:var(--laptop-tapa-4)"/>
+  </linearGradient>
+  <linearGradient id="laptop-g-tapa-osc__E" gradientUnits="userSpaceOnUse" x1="1563" y1="700" x2="1706.7" y2="743">
+    <stop offset="0" style="stop-color:var(--laptop-tapa-4)" stop-opacity="0"/>
+    <stop offset=".15" style="stop-color:var(--laptop-tapa-4)" stop-opacity="0"/>
+    <stop offset="1" style="stop-color:var(--laptop-tapa-4)" stop-opacity=".55"/>
+  </linearGradient>
+  <linearGradient id="laptop-g-tapa-reflejo__E" gradientUnits="userSpaceOnUse" x1="1563" y1="700" x2="1668.4" y2="731.6">
+    <stop offset="0" style="stop-color:var(--laptop-tapa-reflejo)"/>
+    <stop offset=".45" style="stop-color:var(--laptop-tapa-reflejo)" stop-opacity=".4"/>
+    <stop offset="1" style="stop-color:var(--laptop-tapa-reflejo)" stop-opacity="0"/>
+  </linearGradient>
+  <!-- Filo de la tapa: a lo largo (se apaga hacia la bisagra) y a través (redondeado) -->
+  <linearGradient id="laptop-g-canto__E" gradientUnits="userSpaceOnUse" x1="1661" y1="360" x2="1503" y2="906">
+    <stop offset="0" style="stop-color:var(--laptop-canto-cielo)"/>
+    <stop offset=".025" style="stop-color:var(--laptop-canto-cielo)"/>
+    <stop offset=".09" style="stop-color:var(--laptop-canto-med)"/>
+    <stop offset=".26" style="stop-color:var(--laptop-canto-luz)"/>
+    <stop offset=".52" style="stop-color:var(--laptop-canto-luz)"/>
+    <stop offset=".81" style="stop-color:var(--laptop-canto-med)"/>
+    <stop offset=".925" style="stop-color:var(--laptop-canto-osc)"/>
+    <stop offset=".975" style="stop-color:var(--laptop-canto-fin)"/>
+    <stop offset="1" style="stop-color:var(--laptop-canto-fin)" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="laptop-g-canto-vol__E" gradientUnits="userSpaceOnUse" x1="1563" y1="700" x2="1571.7" y2="702.6">
+    <stop offset="0" style="stop-color:var(--laptop-tapa-2)" stop-opacity=".12"/>
+    <stop offset=".3" style="stop-color:var(--laptop-tapa-2)" stop-opacity="0"/>
+    <stop offset=".55" style="stop-color:var(--laptop-tapa-2)" stop-opacity=".22"/>
+    <stop offset="1" style="stop-color:var(--laptop-tapa-2)" stop-opacity=".8"/>
+  </linearGradient>
+  <linearGradient id="laptop-g-canto-brillo__E" gradientUnits="userSpaceOnUse" x1="1663" y1="368" x2="1508" y2="886">
+    <stop offset="0" style="stop-color:var(--laptop-canto-brillo)" stop-opacity="0"/>
+    <stop offset=".12" style="stop-color:var(--laptop-canto-brillo)" stop-opacity=".85"/>
+    <stop offset=".6" style="stop-color:var(--laptop-canto-brillo)" stop-opacity=".55"/>
+    <stop offset=".9" style="stop-color:var(--laptop-canto-brillo)" stop-opacity=".12"/>
+    <stop offset="1" style="stop-color:var(--laptop-canto-brillo)" stop-opacity="0"/>
+  </linearGradient>
+  <!-- Sombra larga del atardecer sobre la mesa: densa junto a la base, se pierde hacia la punta -->
+  <linearGradient id="laptop-g-sombra-larga__E" gradientUnits="userSpaceOnUse" x1="1240" y1="862" x2="770" y2="934">
+    <stop offset="0" style="stop-color:var(--laptop-sombra)"/>
+    <stop offset=".3" style="stop-color:var(--laptop-sombra)" stop-opacity=".8"/>
+    <stop offset=".7" style="stop-color:var(--laptop-sombra)" stop-opacity=".3"/>
+    <stop offset="1" style="stop-color:var(--laptop-sombra)" stop-opacity="0"/>
+  </linearGradient>
+  <!-- Filtro propio de la sombra larga, en sRGB: en linearRGB un degradé oscuro y translúcido se cuantiza en bandas con salto de tono -->
+  <filter id="laptop-f-larga__E" filterUnits="userSpaceOnUse" x="680" y="800" width="1080" height="200" color-interpolation-filters="sRGB">
+    <feGaussianBlur stdDeviation="5"/>
+  </filter>
+  <filter id="laptop-f-suave__E" filterUnits="userSpaceOnUse" x="1000" y="800" width="760" height="200">
+    <feGaussianBlur stdDeviation="6"/>
+  </filter>
+  <filter id="laptop-f-fino__E" filterUnits="userSpaceOnUse" x="1000" y="800" width="760" height="200">
+    <feGaussianBlur stdDeviation="1.6"/>
+  </filter>
+</defs>
+
+<g id="laptop-todo__E">
+  <!-- Sombra de la base sobre la mesa, por estado -->
+  <path data-solo="amanecer" filter="url(#laptop-f-suave__E)" fill="var(--laptop-sombra)" d="M1108,866 L1136,862 L1200,868 L1300,884 L1400,901 L1503,916 L1672,888 L1710,888 L1710,970 L1462,970 L1402,944 L1314,927 L1262,913 L1212,902 L1136,888Z"/>
+  <path data-solo="mediodia noche" filter="url(#laptop-f-suave__E)" fill="var(--laptop-sombra)" d="M1098,866 L1126,863 L1200,868 L1300,884 L1400,901 L1503,916 L1672,888 L1710,888 L1710,970 L1450,970 L1390,938 L1300,921 L1250,908 L1200,897 L1120,884Z"/>
+  <!-- Atardecer: sol bajo a la derecha, la sombra de la tapa y la base se estira hacia la izquierda como la del stick y se apaga en la punta -->
+  <path data-solo="atardecer" filter="url(#laptop-f-larga__E)" fill="url(#laptop-g-sombra-larga__E)" d="M1110,848 L1000,864 L760,903 L800,925 L900,975 L1710,975 L1710,888 L1672,888 L1503,916 L1400,901 L1300,884 L1200,868Z"/>
+  <!-- Sombra más densa al pie de la tapa -->
+  <path filter="url(#laptop-f-suave__E)" fill="var(--laptop-sombra-tapa)" d="M1500,912 L1672,880 L1710,880 L1710,970 L1462,970Z"/>
+  <!-- Oclusión: el hueco oscuro entre la base y la mesa -->
+  <path filter="url(#laptop-f-fino__E)" fill="var(--laptop-oclusion)" d="M1128,855 L1200,864 L1300,879.5 L1400,897 L1460,907.5 L1510,914 L1672,882 L1672,894 L1620,905 L1560,917 L1520,922 L1460,918.5 L1400,910 L1300,896 L1200,878.5 L1160,868Z"/>
+
+  <!-- Canto de la base -->
+  <path fill="url(#laptop-g-lado__E)" d="M1107.6,829 L1108,845.5 Q1108.8,850 1116,851 L1200,864 L1300,879.5 L1400,897 L1460,907.5 L1503,913 L1516,915 L1516,890.2 L1506,889.2 L1470,885.4 L1114,833.2Z"/>
+  <path fill="url(#laptop-g-lado-vol__E)" d="M1107.6,829 L1108,845.5 Q1108.8,850 1116,851 L1200,864 L1300,879.5 L1400,897 L1460,907.5 L1503,913 L1516,915 L1516,890.2 L1506,889.2 L1470,885.4 L1114,833.2Z"/>
+  <!-- Puertos -->
+  <ellipse fill="var(--laptop-puerto-luz)" opacity=".5" cx="1428.6" cy="890.2" rx="2.9" ry="2.6"/>
+  <ellipse fill="var(--laptop-puerto)" opacity=".8" cx="1428.6" cy="889.5" rx="2.5" ry="2.2"/>
+  <rect fill="var(--laptop-puerto-luz)" opacity=".6" x="1447.3" y="889.9" width="15.4" height="7" rx="3.5" transform="rotate(8.4 1455 892.6)"/>
+  <rect fill="var(--laptop-puerto)" x="1447.5" y="889.2" width="15" height="6.6" rx="3.3" transform="rotate(8.4 1455 892.6)"/>
+
+  <!-- Cara superior -->
+  <path fill="url(#laptop-g-sup__E)" d="M1560,765.9 L1122,823.7 C1113.5,824.9 1107.6,826.6 1107.6,829.8 C1107.6,832.4 1110,833 1114,833.2 L1470,885.4 L1506,889.2 L1540,893 L1560,880Z"/>
+  <path data-solo="amanecer mediodia noche" fill="url(#laptop-g-brillo-a__E)" d="M1560,765.9 L1122,823.7 C1113.5,824.9 1107.6,826.6 1107.6,829.8 C1107.6,832.4 1110,833 1114,833.2 L1470,885.4 L1506,889.2 L1540,893 L1560,880Z"/>
+  <path data-solo="atardecer" fill="url(#laptop-g-brillo-b__E)" d="M1560,765.9 L1122,823.7 C1113.5,824.9 1107.6,826.6 1107.6,829.8 C1107.6,832.4 1110,833 1114,833.2 L1470,885.4 L1506,889.2 L1540,893 L1560,880Z"/>
+  <!-- Trackpad insinuado -->
+  <path fill="url(#laptop-g-pad__E)" d="M1331,801.3 L1545,773 L1545,822 L1334,805.8 Q1330,804 1331,801.3Z"/>
+  <path fill="none" stroke="var(--laptop-pad-linea)" stroke-width=".9" opacity=".28" d="M1352,798.6 L1545,773"/>
+  <path fill="none" stroke="var(--laptop-filo)" stroke-width=".8" opacity=".28" d="M1356,807.9 L1478,817"/>
+  <path fill="url(#laptop-g-frente__E)" d="M1300,860.5 L1336,841.3 L1545,869 L1545,893 L1506,889.2 L1470,885.4Z"/>
+  <!-- Teclado: pozo, canto de las teclas, cara de las teclas y brillo del borde -->
+  <path fill="url(#laptop-g-pozo__E)" d="M1336,841.3 L1545,809.6 L1545,869Z"/>
+  <path fill="var(--laptop-tecla-lado)" d="M1341.3,841.7 L1364.7,838.3 L1390.5,839.8 L1367.3,843.3Z M1367.3,837.9 L1389.1,834.7 L1414.7,836.2 L1393.1,839.4Z M1391.7,834.3 L1412,831.3 L1437.4,832.8 L1417.3,835.8Z M1414.6,831 L1438.5,827.4 L1463.6,828.9 L1439.9,832.5Z M1441.1,827.1 L1534.6,813.3 L1559,814.7 L1466.2,828.5Z M1367.3,845.1 L1425.1,836.5 L1452.6,838.2 L1395.3,846.9Z M1427.7,836.1 L1449.4,832.8 L1476.6,834.6 L1455.2,837.8Z M1452,832.5 L1472.1,829.5 L1499.1,831.2 L1479.2,834.2Z M1474.7,829.1 L1493.4,826.3 L1520.3,828 L1501.7,830.8Z M1496,825.9 L1513.4,823.3 L1540.1,825 L1522.9,827.6Z M1516,822.9 L1532.2,820.5 L1558.7,822.1 L1542.7,824.6Z M1395.3,848.7 L1445.5,841.1 L1476,843.3 L1426.3,851Z M1448.1,840.7 L1473.2,836.9 L1503.4,839 L1478.6,842.9Z M1475.8,836.5 L1499.2,833 L1529.2,835.1 L1506,838.6Z M1501.8,832.6 L1523.6,829.3 L1553.3,831.3 L1531.7,834.7Z M1426.3,852.7 L1473.6,845.4 L1507.1,848 L1460.3,855.4Z M1476.2,845 L1504.5,840.7 L1537.6,843.2 L1509.7,847.6Z M1507.1,840.3 L1533.5,836.2 L1566.3,838.6 L1540.2,842.8Z M1460.3,857.2 L1495.7,851.6 L1533.2,854.7 L1498.3,860.3Z M1498.3,851.2 L1531.3,846 L1568.4,849 L1535.8,854.2Z M1498.3,862.1 L1538.7,855.6 L1581.1,859.3 L1541.3,865.9Z"/>
+  <path fill="var(--laptop-tecla)" d="M1341.3,840.4 L1364.7,837 L1390.5,838 L1367.3,841.5Z M1367.3,836.6 L1389.1,833.4 L1414.7,834.4 L1393.1,837.6Z M1391.7,833 L1412,830 L1437.4,831 L1417.3,834Z M1414.6,829.7 L1438.5,826.1 L1463.6,827.1 L1439.9,830.7Z M1441.1,825.8 L1534.6,812 L1559,812.9 L1466.2,826.7Z M1367.3,843.8 L1425.1,835.2 L1452.6,836.4 L1395.3,845.1Z M1427.7,834.8 L1449.4,831.5 L1476.6,832.8 L1455.2,836Z M1452,831.2 L1472.1,828.2 L1499.1,829.4 L1479.2,832.4Z M1474.7,827.8 L1493.4,825 L1520.3,826.2 L1501.7,829Z M1496,824.6 L1513.4,822 L1540.1,823.2 L1522.9,825.8Z M1516,821.6 L1532.2,819.2 L1558.7,820.3 L1542.7,822.8Z M1395.3,847.4 L1445.5,839.8 L1476,841.5 L1426.3,849.2Z M1448.1,839.4 L1473.2,835.6 L1503.4,837.2 L1478.6,841.1Z M1475.8,835.2 L1499.2,831.7 L1529.2,833.3 L1506,836.8Z M1501.8,831.3 L1523.6,828 L1553.3,829.5 L1531.7,832.9Z M1426.3,851.4 L1473.6,844.1 L1507.1,846.2 L1460.3,853.6Z M1476.2,843.7 L1504.5,839.4 L1537.6,841.4 L1509.7,845.8Z M1507.1,839 L1533.5,834.9 L1566.3,836.8 L1540.2,841Z M1460.3,855.9 L1495.7,850.3 L1533.2,852.9 L1498.3,858.5Z M1498.3,849.9 L1531.3,844.7 L1568.4,847.2 L1535.8,852.4Z M1498.3,860.8 L1538.7,854.3 L1581.1,857.5 L1541.3,864.1Z"/>
+  <path fill="none" stroke="var(--laptop-tecla-luz)" stroke-width=".8" opacity=".7" d="M1342.3,841 L1363.7,837.6 M1368.3,837.2 L1388.1,834 M1392.7,833.6 L1411,830.6 M1415.6,830.3 L1437.5,826.7 M1442.1,826.4 L1533.6,812.6 M1368.3,844.4 L1424.1,835.8 M1428.7,835.4 L1448.4,832.1 M1453,831.8 L1471.1,828.8 M1475.7,828.4 L1492.4,825.6 M1497,825.2 L1512.4,822.6 M1517,822.2 L1531.2,819.8 M1396.3,848 L1444.5,840.4 M1449.1,840 L1472.2,836.2 M1476.8,835.8 L1498.2,832.3 M1502.8,831.9 L1522.6,828.6 M1427.3,852 L1472.6,844.7 M1477.2,844.3 L1503.5,840 M1508.1,839.6 L1532.5,835.5 M1461.3,856.5 L1494.7,850.9 M1499.3,850.5 L1530.3,845.3 M1499.3,861.4 L1537.7,854.9"/>
+  <!-- Sombra de la tapa sobre la base -->
+  <path data-solo="atardecer" fill="url(#laptop-g-sombra-base__E)" d="M1560,765.9 L1360,792.3 L1360,869.3 L1470,885.4 L1506,889.2 L1540,893 L1560,880Z"/>
+  <!-- Filos de luz de la base -->
+  <path fill="none" stroke="var(--laptop-filo)" stroke-width="1" opacity=".7" stroke-linecap="round" d="M1124,823.9 L1545,768.4"/>
+  <path fill="none" stroke="var(--laptop-filo)" stroke-width="1.4" opacity=".85" stroke-linecap="round" d="M1108.8,831.8 Q1109.8,833.2 1114,833.5 L1470,885.7 L1506,889.5"/>
+
+  <!-- Tapa -->
+  <path fill="url(#laptop-g-tapa__E)" d="M1672,359 L1667,359 Q1661,359.5 1660.8,366.5 L1506,884 C1503.6,895 1503,911.5 1514.5,915.2 L1672,883Z"/>
+  <path fill="url(#laptop-g-tapa-osc__E)" d="M1672,359 L1667,359 Q1661,359.5 1660.8,366.5 L1506,884 C1503.6,895 1503,911.5 1514.5,915.2 L1672,883Z"/>
+  <path fill="url(#laptop-g-tapa-reflejo__E)" d="M1672,359 L1667,359 Q1661,359.5 1660.8,366.5 L1506,884 C1503.6,895 1503,911.5 1514.5,915.2 L1672,883Z"/>
+  <!-- Filo de la tapa -->
+  <path fill="url(#laptop-g-canto__E)" d="M1672,359 L1667,359 Q1661,359.5 1660.8,366.5 L1506,884 L1504.8,895 L1505.3,902.3 L1509.5,906.5 C1511.5,900 1513.2,892 1515.5,884 L1669.6,369 Q1670,368.5 1672,368.3Z"/>
+  <path fill="url(#laptop-g-canto-vol__E)" d="M1660.8,366.5 L1506,884 L1504.8,895 L1505.3,902.3 L1509.5,906.5 C1511.5,900 1513.2,892 1515.5,884 L1669.6,369Z"/>
+  <path fill="none" stroke="url(#laptop-g-canto-brillo__E)" stroke-width="1.3" stroke-linecap="round" d="M1663.4,369 L1509,885"/>
+</g>

@@ -1,0 +1,258 @@
+<defs>
+  <!-- Pared izquierda (cara al cuarto, en sombra) -->
+  <linearGradient id="ventana-pared__E" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="700">
+    <stop offset="0" style="stop-color:var(--ventana-pared-a)"/>
+    <stop offset=".45" style="stop-color:var(--ventana-pared-b)"/>
+    <stop offset="1" style="stop-color:var(--ventana-pared-c)"/>
+  </linearGradient>
+  <linearGradient id="ventana-pared-vol__E" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="107" y2="0">
+    <stop offset="0" stop-color="#000" stop-opacity=".07"/>
+    <stop offset=".6" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".93" stop-color="#fff" stop-opacity="0"/>
+    <stop offset="1" stop-color="#fff" stop-opacity=".06"/>
+  </linearGradient>
+  <!-- Jamba de la pared (canto que mira al vidrio, recibe la luz) -->
+  <linearGradient id="ventana-jamba__E" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="634">
+    <stop offset="0" style="stop-color:var(--ventana-jamba-a)"/>
+    <stop offset=".28" style="stop-color:var(--ventana-jamba-b)"/>
+    <stop offset=".45" style="stop-color:var(--ventana-jamba-c)"/>
+    <stop offset=".68" style="stop-color:var(--ventana-jamba-d)"/>
+    <stop offset=".8" style="stop-color:var(--ventana-jamba-e)"/>
+    <stop offset="1" style="stop-color:var(--ventana-jamba-f)"/>
+  </linearGradient>
+  <!-- Marco izquierdo, cara frontal: media caña oscura, se aclara hacia el vidrio -->
+  <linearGradient id="ventana-marco__E" gradientUnits="userSpaceOnUse" x1="148.7" y1="0" x2="202.7" y2="0" gradientTransform="skewX(-0.2)">
+    <stop offset="0" style="stop-color:var(--ventana-marco-a)"/>
+    <stop offset=".07" style="stop-color:var(--ventana-marco-b)"/>
+    <stop offset=".21" style="stop-color:var(--ventana-marco-c)"/>
+    <stop offset=".33" style="stop-color:var(--ventana-marco-d)"/>
+    <stop offset=".52" style="stop-color:var(--ventana-marco-e)"/>
+    <stop offset=".72" style="stop-color:var(--ventana-marco-f)"/>
+    <stop offset="1" style="stop-color:var(--ventana-marco-g)"/>
+  </linearGradient>
+  <!-- Rebote cálido de la mesa sobre la cara oscura -->
+  <linearGradient id="ventana-rebote__E" gradientUnits="userSpaceOnUse" x1="0" y1="300" x2="0" y2="645">
+    <stop offset="0" style="stop-color:var(--ventana-rebote)" stop-opacity="0"/>
+    <stop offset=".62" style="stop-color:var(--ventana-rebote)" stop-opacity=".3"/>
+    <stop offset=".9" style="stop-color:var(--ventana-rebote)" stop-opacity=".14"/>
+    <stop offset="1" style="stop-color:var(--ventana-rebote)" stop-opacity=".05"/>
+  </linearGradient>
+  <!-- Oclusión en el pie de los marcos, donde apoyan en el antepecho -->
+  <linearGradient id="ventana-pie-izq__E" gradientUnits="userSpaceOnUse" x1="0" y1="592" x2="0" y2="627">
+    <stop offset="0" style="stop-color:var(--ventana-marco-d)" stop-opacity="0"/>
+    <stop offset="1" style="stop-color:var(--ventana-marco-d)" stop-opacity=".5"/>
+  </linearGradient>
+  <linearGradient id="ventana-pie-der__E" gradientUnits="userSpaceOnUse" x1="0" y1="586" x2="0" y2="645">
+    <stop offset="0" style="stop-color:var(--ventana-sombra-fria)" stop-opacity="0"/>
+    <stop offset=".6" style="stop-color:var(--ventana-sombra-fria)" stop-opacity=".22"/>
+    <stop offset="1" style="stop-color:var(--ventana-sombra-fria)" stop-opacity=".55"/>
+  </linearGradient>
+  <!-- Marco izquierdo, cara lateral clara -->
+  <linearGradient id="ventana-lado__E" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="627">
+    <stop offset="0" style="stop-color:var(--ventana-lado-a)"/>
+    <stop offset=".55" style="stop-color:var(--ventana-lado-b)"/>
+    <stop offset="1" style="stop-color:var(--ventana-lado-c)"/>
+  </linearGradient>
+  <linearGradient id="ventana-filo__E" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="627">
+    <stop offset="0" style="stop-color:var(--ventana-filo)" stop-opacity="1"/>
+    <stop offset=".6" style="stop-color:var(--ventana-filo)" stop-opacity=".8"/>
+    <stop offset="1" style="stop-color:var(--ventana-filo)" stop-opacity=".25"/>
+  </linearGradient>
+  <linearGradient id="ventana-burlete__E" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="640">
+    <stop offset="0" style="stop-color:var(--ventana-burlete-a)"/>
+    <stop offset="1" style="stop-color:var(--ventana-burlete-b)"/>
+  </linearGradient>
+  <!-- Junquillo contra el vidrio -->
+  <linearGradient id="ventana-junq__E" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="623">
+    <stop offset="0" style="stop-color:var(--ventana-junq-a)"/>
+    <stop offset=".12" style="stop-color:var(--ventana-junq-b)"/>
+    <stop offset=".5" style="stop-color:var(--ventana-junq-c)"/>
+    <stop offset=".68" style="stop-color:var(--ventana-junq-d)"/>
+    <stop offset="1" style="stop-color:var(--ventana-junq-e)"/>
+  </linearGradient>
+  <linearGradient id="ventana-junq-vol__E" gradientUnits="userSpaceOnUse" x1="238" y1="0" x2="245" y2="0">
+    <stop offset="0" stop-color="#000" stop-opacity=".07"/>
+    <stop offset=".5" stop-color="#fff" stop-opacity="0"/>
+    <stop offset="1" stop-color="#fff" stop-opacity=".16"/>
+  </linearGradient>
+  <!-- Parante derecho -->
+  <linearGradient id="ventana-plado__E" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="644">
+    <stop offset="0" style="stop-color:var(--ventana-plado-a)"/>
+    <stop offset=".45" style="stop-color:var(--ventana-plado-b)"/>
+    <stop offset="1" style="stop-color:var(--ventana-plado-c)"/>
+  </linearGradient>
+  <linearGradient id="ventana-parante__E" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="644">
+    <stop offset="0" style="stop-color:var(--ventana-parante-a)"/>
+    <stop offset=".5" style="stop-color:var(--ventana-parante-b)"/>
+    <stop offset="1" style="stop-color:var(--ventana-parante-c)"/>
+  </linearGradient>
+  <linearGradient id="ventana-parante-vol__E" gradientUnits="userSpaceOnUse" x1="1509" y1="0" x2="1570" y2="0">
+    <stop offset="0" stop-color="#fff" stop-opacity=".035"/>
+    <stop offset=".2" stop-color="#fff" stop-opacity="0"/>
+    <stop offset=".55" stop-color="#000" stop-opacity="0"/>
+    <stop offset="1" stop-color="#000" stop-opacity=".1"/>
+  </linearGradient>
+  <!-- Antepecho: canto superior y frente -->
+  <linearGradient id="ventana-canto__E" gradientUnits="userSpaceOnUse" x1="147" y1="0" x2="1672" y2="0">
+    <stop offset="0" style="stop-color:var(--ventana-canto-a)"/>
+    <stop offset=".1" style="stop-color:var(--ventana-canto-b)"/>
+    <stop offset=".33" style="stop-color:var(--ventana-canto-c)"/>
+    <stop offset=".56" style="stop-color:var(--ventana-canto-d)"/>
+    <stop offset=".756" style="stop-color:var(--ventana-canto-e)"/>
+    <stop offset="1" style="stop-color:var(--ventana-canto-f)"/>
+  </linearGradient>
+  <linearGradient id="ventana-frente__E" gradientUnits="userSpaceOnUse" x1="100" y1="0" x2="1672" y2="0">
+    <stop offset="0" style="stop-color:var(--ventana-frente-a)"/>
+    <stop offset=".028" style="stop-color:var(--ventana-frente-b)"/>
+    <stop offset=".031" style="stop-color:var(--ventana-frente-c)"/>
+    <stop offset=".0445" style="stop-color:var(--ventana-frente-d)"/>
+    <stop offset=".21" style="stop-color:var(--ventana-frente-e)"/>
+    <stop offset=".35" style="stop-color:var(--ventana-frente-f)"/>
+    <stop offset=".5725" style="stop-color:var(--ventana-frente-g)"/>
+    <stop offset=".763" style="stop-color:var(--ventana-frente-h)"/>
+    <stop offset="1" style="stop-color:var(--ventana-frente-i)"/>
+  </linearGradient>
+  <linearGradient id="ventana-frente-vol__E" gradientUnits="userSpaceOnUse" x1="0" y1="632" x2="0" y2="700">
+    <stop offset="0" stop-color="#fff" stop-opacity=".05"/>
+    <stop offset=".12" stop-color="#000" stop-opacity="0"/>
+    <stop offset="1" stop-color="#000" stop-opacity=".2"/>
+  </linearGradient>
+  <!-- Brillo del astro sobre el canto del antepecho: uno por estado, cambia de lugar -->
+  <linearGradient id="ventana-brillo-am__E" gradientUnits="userSpaceOnUse" x1="310" y1="0" x2="510" y2="0">
+    <stop offset="0" style="stop-color:var(--ventana-brillo)" stop-opacity="0"/>
+    <stop offset=".2" style="stop-color:var(--ventana-brillo)" stop-opacity=".5"/>
+    <stop offset=".4" style="stop-color:var(--ventana-brillo)" stop-opacity="1"/>
+    <stop offset=".6" style="stop-color:var(--ventana-brillo)" stop-opacity="1"/>
+    <stop offset=".8" style="stop-color:var(--ventana-brillo)" stop-opacity=".55"/>
+    <stop offset="1" style="stop-color:var(--ventana-brillo)" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="ventana-brillo-md__E" gradientUnits="userSpaceOnUse" x1="800" y1="0" x2="1300" y2="0">
+    <stop offset="0" style="stop-color:var(--ventana-brillo)" stop-opacity="0"/>
+    <stop offset=".3" style="stop-color:var(--ventana-brillo)" stop-opacity=".8"/>
+    <stop offset=".46" style="stop-color:var(--ventana-brillo)" stop-opacity="1"/>
+    <stop offset=".66" style="stop-color:var(--ventana-brillo)" stop-opacity=".75"/>
+    <stop offset="1" style="stop-color:var(--ventana-brillo)" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="ventana-brillo-at__E" gradientUnits="userSpaceOnUse" x1="1130" y1="0" x2="1500" y2="0">
+    <stop offset="0" style="stop-color:var(--ventana-brillo)" stop-opacity="0"/>
+    <stop offset=".5" style="stop-color:var(--ventana-brillo)" stop-opacity=".8"/>
+    <stop offset=".7" style="stop-color:var(--ventana-brillo)" stop-opacity="1"/>
+    <stop offset=".95" style="stop-color:var(--ventana-brillo)" stop-opacity=".6"/>
+    <stop offset="1" style="stop-color:var(--ventana-brillo)" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="ventana-brillo-no__E" gradientUnits="userSpaceOnUse" x1="980" y1="0" x2="1290" y2="0">
+    <stop offset="0" style="stop-color:var(--ventana-brillo)" stop-opacity="0"/>
+    <stop offset=".16" style="stop-color:var(--ventana-brillo)" stop-opacity=".45"/>
+    <stop offset=".3" style="stop-color:var(--ventana-brillo)" stop-opacity=".12"/>
+    <stop offset=".54" style="stop-color:var(--ventana-brillo)" stop-opacity=".55"/>
+    <stop offset=".68" style="stop-color:var(--ventana-brillo)" stop-opacity="1"/>
+    <stop offset=".81" style="stop-color:var(--ventana-brillo)" stop-opacity=".7"/>
+    <stop offset=".935" style="stop-color:var(--ventana-brillo)" stop-opacity=".1"/>
+    <stop offset="1" style="stop-color:var(--ventana-brillo)" stop-opacity="0"/>
+  </linearGradient>
+  <!-- Sombras sobre el canto del antepecho: al pie del marco y al pie del parante -->
+  <linearGradient id="ventana-sombra-izq__E" gradientUnits="userSpaceOnUse" x1="145" y1="0" x2="204" y2="0">
+    <stop offset="0" style="stop-color:var(--ventana-sombra)" stop-opacity=".85"/>
+    <stop offset=".25" style="stop-color:var(--ventana-sombra)" stop-opacity=".78"/>
+    <stop offset=".45" style="stop-color:var(--ventana-sombra)" stop-opacity=".45"/>
+    <stop offset=".9" style="stop-color:var(--ventana-sombra)" stop-opacity=".28"/>
+    <stop offset="1" style="stop-color:var(--ventana-sombra)" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="ventana-sombra-der__E" gradientUnits="userSpaceOnUse" x1="1488" y1="0" x2="1640" y2="0">
+    <stop offset="0" style="stop-color:var(--ventana-sombra-fria)" stop-opacity="0"/>
+    <stop offset=".06" style="stop-color:var(--ventana-sombra-fria)" stop-opacity=".78"/>
+    <stop offset=".375" style="stop-color:var(--ventana-sombra-fria)" stop-opacity=".74"/>
+    <stop offset=".5" style="stop-color:var(--ventana-sombra-fria)" stop-opacity=".42"/>
+    <stop offset=".8" style="stop-color:var(--ventana-sombra-fria)" stop-opacity="0"/>
+  </linearGradient>
+  <!-- Reflejo del vidrio: una banda ancha y una fina, diagonales, que se apagan hacia abajo -->
+  <linearGradient id="ventana-reflejo__E" gradientUnits="userSpaceOnUse" x1="330" y1="0" x2="603" y2="124">
+    <stop offset="0" style="stop-color:var(--ventana-reflejo-color)" stop-opacity="0"/>
+    <stop offset=".1" style="stop-color:var(--ventana-reflejo-color)" stop-opacity="0"/>
+    <stop offset=".18" style="stop-color:var(--ventana-reflejo-color)" stop-opacity=".12"/>
+    <stop offset=".27" style="stop-color:var(--ventana-reflejo-color)" stop-opacity=".5"/>
+    <stop offset=".36" style="stop-color:var(--ventana-reflejo-color)" stop-opacity=".88"/>
+    <stop offset=".42" style="stop-color:var(--ventana-reflejo-color)" stop-opacity="1"/>
+    <stop offset=".48" style="stop-color:var(--ventana-reflejo-color)" stop-opacity=".88"/>
+    <stop offset=".56" style="stop-color:var(--ventana-reflejo-color)" stop-opacity=".45"/>
+    <stop offset=".63" style="stop-color:var(--ventana-reflejo-color)" stop-opacity=".1"/>
+    <stop offset=".68" style="stop-color:var(--ventana-reflejo-color)" stop-opacity="0"/>
+    <stop offset=".76" style="stop-color:var(--ventana-reflejo-color)" stop-opacity="0"/>
+    <stop offset=".8" style="stop-color:var(--ventana-reflejo-color)" stop-opacity=".2"/>
+    <stop offset=".84" style="stop-color:var(--ventana-reflejo-color)" stop-opacity=".4"/>
+    <stop offset=".88" style="stop-color:var(--ventana-reflejo-color)" stop-opacity=".2"/>
+    <stop offset=".92" style="stop-color:var(--ventana-reflejo-color)" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="ventana-reflejo-cae__E" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="520">
+    <stop offset="0" stop-color="#fff"/>
+    <stop offset=".4" stop-color="#fff" stop-opacity=".55"/>
+    <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <mask id="ventana-reflejo-m__E" maskUnits="userSpaceOnUse" x="200" y="0" width="1300" height="660">
+    <rect x="200" y="0" width="1300" height="660" fill="url(#ventana-reflejo-cae__E)"/>
+  </mask>
+  <filter id="ventana-difusa__E" x="-40%" y="-80%" width="180%" height="260%">
+    <feGaussianBlur stdDeviation="4"/>
+  </filter>
+</defs>
+
+<g id="ventana-todo__E">
+  <!-- Vidrio: reflejo muy tenue (paño principal y paño derecho) -->
+  <g style="opacity:var(--ventana-reflejo)">
+    <rect x="246" y="0" width="1244" height="645" fill="url(#ventana-reflejo__E)" mask="url(#ventana-reflejo-m__E)"/>
+    <rect x="280" y="0" width="102" height="660" fill="url(#ventana-reflejo__E)" mask="url(#ventana-reflejo-m__E)" transform="translate(1290 0)"/>
+  </g>
+
+  <!-- Resplandor del astro apoyado en el canto del antepecho -->
+  <g filter="url(#ventana-difusa__E)" style="fill:var(--ventana-brillo);opacity:var(--ventana-brillo-halo)">
+    <ellipse data-solo="amanecer" cx="408" cy="630.5" rx="78" ry="5"/>
+    <ellipse data-solo="mediodia" cx="1035" cy="640" rx="150" ry="5"/>
+    <ellipse data-solo="atardecer" cx="1385" cy="645.5" rx="95" ry="5"/>
+    <ellipse data-solo="noche" cx="1192" cy="642.5" rx="34" ry="4"/>
+  </g>
+
+  <!-- Antepecho: canto superior (fuga hacia la derecha) -->
+  <path d="M100 620.5 1672 644.75V655.5L100 631.2Z" fill="url(#ventana-canto__E)"/>
+  <path data-solo="amanecer" d="M310 623.7 510 626.8V637.5L310 634.4Z" fill="url(#ventana-brillo-am__E)"/>
+  <path data-solo="mediodia" d="M800 631.3 1300 639V649.7L800 642Z" fill="url(#ventana-brillo-md__E)"/>
+  <path data-solo="atardecer" d="M1130 636.4 1500 642.1V652.8L1130 647.1Z" fill="url(#ventana-brillo-at__E)"/>
+  <path data-solo="noche" d="M980 634.1 1290 638.9V649.6L980 644.8Z" fill="url(#ventana-brillo-no__E)"/>
+  <!-- La cara clara del marco se refleja en el canto; delante de la cara oscura, sombra -->
+  <path d="M201 622 237 622.6V633.4L201 632.8Z" style="fill:var(--ventana-lado-b)" opacity=".7"/>
+  <path d="M140 621.1 204 622.1V632.9L140 631.8Z" fill="url(#ventana-sombra-izq__E)"/>
+  <path d="M231 621.6 246 621.9V624.6L231 624.3Z" style="fill:var(--ventana-sombra)" opacity=".3"/>
+  <path d="M1488 641.9 1640 644.3V655L1488 652.6Z" fill="url(#ventana-sombra-der__E)"/>
+  <!-- Antepecho: frente (baja por detrás del escritorio para no dejar hueco) -->
+  <path d="M100 630.5 1672 654.75V716H100Z" fill="url(#ventana-frente__E)"/>
+  <path d="M100 630.5 1672 654.75V716H100Z" fill="url(#ventana-frente-vol__E)"/>
+
+  <!-- Jamba de la pared con sombras blandas de las hojas -->
+  <path d="M106.5 0H148.9L146.4 634H104Z" fill="url(#ventana-jamba__E)"/>
+  <g filter="url(#ventana-difusa__E)" style="fill:var(--ventana-sombra-hoja);opacity:var(--ventana-sombra-hoja-op)">
+    <path d="M-46 0Q0-32 46 0Q0 32-46 0Z" transform="translate(138 405) rotate(-20)"/>
+    <path d="M-42 0Q0-44 42 0Q0 44-42 0Z" transform="translate(110 486) rotate(-35)"/>
+    <path d="M-36 0Q0-24 36 0Q0 24-36 0Z" transform="translate(140 290) rotate(-40)"/>
+  </g>
+
+  <!-- Marco izquierdo: junquillo, burlete, cara lateral clara, filo, cara frontal -->
+  <path d="M238 0H244.7L244.1 623 236.4 622.9Z" fill="url(#ventana-junq__E)"/>
+  <path d="M238 0H244.7L244.1 623 236.4 622.9Z" fill="url(#ventana-junq-vol__E)"/>
+  <path d="M234.4 0H238.2L236.7 623 232.2 623.6Z" fill="url(#ventana-burlete__E)"/>
+  <path d="M202.5 0H234.5L232.3 624.3 200.7 627Z" fill="url(#ventana-lado__E)"/>
+  <path d="M232.6 0H234.5L232.3 624.3 230.4 624.5Z" fill="url(#ventana-filo__E)"/>
+  <path d="M148.7 0H202.7L200.9 627 146.2 626.1Z" fill="url(#ventana-marco__E)"/>
+  <path d="M147.5 300H201.8L200.9 627 146.2 626.1Z" fill="url(#ventana-rebote__E)"/>
+  <path d="M146.3 592H201L200.9 627 146.2 626.1Z" fill="url(#ventana-pie-izq__E)"/>
+
+  <!-- Pared izquierda -->
+  <path d="M0 0H106.7L103.8 724H0Z" fill="url(#ventana-pared__E)"/>
+  <path d="M0 0H106.7L103.8 724H0Z" fill="url(#ventana-pared-vol__E)"/>
+
+  <!-- Parante derecho: burlete, cara lateral, filo, cara frontal -->
+  <path d="M1488.4 0H1492.5L1495.4 642.1 1489.4 641.9Z" fill="url(#ventana-burlete__E)"/>
+  <path d="M1492.3 0H1508.3L1511.1 643.7 1495.2 642Z" fill="url(#ventana-plado__E)"/>
+  <path d="M1506.6 0H1508.3L1511.1 643.7 1509.4 643.5Z" fill="#fff" style="opacity:var(--ventana-pfilo)"/>
+  <path d="M1508.1 0H1568L1572.5 644.6 1510.9 643.7Z" fill="url(#ventana-parante__E)"/>
+  <path d="M1508.1 0H1568L1572.5 644.6 1510.9 643.7Z" fill="url(#ventana-parante-vol__E)"/>
+  <path d="M1510.6 586H1572.1L1572.5 644.6 1510.9 643.7Z" fill="url(#ventana-pie-der__E)"/>
+</g>

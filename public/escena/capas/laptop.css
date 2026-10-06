@@ -1,0 +1,61 @@
+/* Capa laptop: 37 variables por estado. Amanecer, mediodía y noche salen de muestrear las referencias; atardecer se deriva. */
+.e-amanecer {
+  --laptop-sup-1: #f3d5bb; --laptop-sup-2: #fbd8b4; --laptop-sup-3: #e2bea7; --laptop-sup-4: #d4b4a4;
+  --laptop-brillo: rgba(255, 242, 216, .95); --laptop-filo: #ffe9c8;
+  --laptop-pad: #d0ac96; --laptop-pad-linea: #a8806a;
+  --laptop-pozo: #94786c; --laptop-tecla: #6a564e; --laptop-tecla-lado: #4a3a34; --laptop-tecla-luz: #8e766a;
+  --laptop-lado-1: #945534; --laptop-lado-2: #8b5331; --laptop-lado-3: #7c4a2e; --laptop-lado-4: #ae785a; --laptop-lado-5: #48291e;
+  --laptop-lado-luz: #eabda1; --laptop-lado-som: #4a2210;
+  --laptop-puerto: #1c0c06; --laptop-puerto-luz: #b48058;
+  --laptop-tapa-1: #503429; --laptop-tapa-2: #5c3a2a; --laptop-tapa-3: #48302a; --laptop-tapa-4: #392925;
+  --laptop-tapa-reflejo: rgba(255, 170, 110, .04);
+  --laptop-canto-cielo: #d8a890; --laptop-canto-luz: #f7aa6e; --laptop-canto-med: #dc9060; --laptop-canto-osc: #b47a57;
+  --laptop-canto-fin: #744a36; --laptop-canto-brillo: #ffd2a0;
+  --laptop-sombra: rgba(75, 20, 0, .6); --laptop-sombra-tapa: rgba(35, 8, 0, .55); --laptop-oclusion: rgba(17, 2, 0, .94);
+  --laptop-sombra-base: rgba(60, 20, 20, 0); --laptop-sup-frente: rgba(160, 110, 100, .06);
+}
+.e-mediodia {
+  --laptop-sup-1: #fef3e2; --laptop-sup-2: #fbeede; --laptop-sup-3: #e8d8ca; --laptop-sup-4: #d3c5bc;
+  --laptop-brillo: rgba(255, 255, 255, .35); --laptop-filo: #fff6ea;
+  --laptop-pad: #cfbfb3; --laptop-pad-linea: #a8968a;
+  --laptop-pozo: #8f8583; --laptop-tecla: #6a6466; --laptop-tecla-lado: #4b4648; --laptop-tecla-luz: #908886;
+  --laptop-lado-1: #935f41; --laptop-lado-2: #89593c; --laptop-lado-3: #81553b; --laptop-lado-4: #ab7e62; --laptop-lado-5: #46302a;
+  --laptop-lado-luz: #f4d7c1; --laptop-lado-som: #4a2a18;
+  --laptop-puerto: #1c1009; --laptop-puerto-luz: #b08a70;
+  --laptop-tapa-1: #4a3b35; --laptop-tapa-2: #553e33; --laptop-tapa-3: #46352f; --laptop-tapa-4: #33292a;
+  --laptop-tapa-reflejo: rgba(255, 220, 190, .03);
+  --laptop-canto-cielo: #cfd0d4; --laptop-canto-luz: #e4ba98; --laptop-canto-med: #c99a7a; --laptop-canto-osc: #ae8367;
+  --laptop-canto-fin: #6c4c36; --laptop-canto-brillo: #f8dcc0;
+  --laptop-sombra: rgba(70, 22, 0, .6); --laptop-sombra-tapa: rgba(30, 8, 0, .55); --laptop-oclusion: rgba(19, 6, 0, .94);
+  --laptop-sombra-base: rgba(60, 30, 30, 0); --laptop-sup-frente: rgba(150, 130, 125, .08);
+}
+.e-atardecer {
+  --laptop-sup-1: #f4c6ac; --laptop-sup-2: #ecb49e; --laptop-sup-3: #cf9c92; --laptop-sup-4: #b08488;
+  --laptop-brillo: rgba(255, 214, 180, .8); --laptop-filo: #ffd9c0;
+  --laptop-pad: #b88e88; --laptop-pad-linea: #8c6468;
+  --laptop-pozo: #806068; --laptop-tecla: #5a4652; --laptop-tecla-lado: #3c2c38; --laptop-tecla-luz: #846a7c;
+  --laptop-lado-1: #8c4a3c; --laptop-lado-2: #824538; --laptop-lado-3: #703c34; --laptop-lado-4: #a8685c; --laptop-lado-5: #40242a;
+  --laptop-lado-luz: #eaae9c; --laptop-lado-som: #40161c;
+  --laptop-puerto: #1a0a0c; --laptop-puerto-luz: #a87068;
+  --laptop-tapa-1: #4a2f3a; --laptop-tapa-2: #56343a; --laptop-tapa-3: #432b34; --laptop-tapa-4: #33232c;
+  --laptop-tapa-reflejo: rgba(255, 150, 130, .05);
+  --laptop-canto-cielo: #c79ab0; --laptop-canto-luz: #ffb080; --laptop-canto-med: #e88c68; --laptop-canto-osc: #b06858;
+  --laptop-canto-fin: #6a3a40; --laptop-canto-brillo: #ffd8b0;
+  --laptop-sombra: rgba(70, 14, 30, .55); --laptop-sombra-tapa: rgba(36, 6, 16, .55); --laptop-oclusion: rgba(22, 3, 8, .94);
+  --laptop-sombra-base: rgba(60, 20, 40, .42); --laptop-sup-frente: rgba(70, 40, 70, .15);
+}
+.e-noche {
+  --laptop-sup-1: #e8c0a0; --laptop-sup-2: #cc9f8c; --laptop-sup-3: #9a7e7d; --laptop-sup-4: #7d6e75;
+  --laptop-brillo: rgba(240, 196, 160, .5); --laptop-filo: #f2d0b4;
+  --laptop-pad: #8d716c; --laptop-pad-linea: #5e4a4a;
+  --laptop-pozo: #3e363c; --laptop-tecla: #2c272e; --laptop-tecla-lado: #1e1a20; --laptop-tecla-luz: #4a444c;
+  --laptop-lado-1: #5c3421; --laptop-lado-2: #533121; --laptop-lado-3: #452a1c; --laptop-lado-4: #785143; --laptop-lado-5: #2a1a18;
+  --laptop-lado-luz: #99746a; --laptop-lado-som: #1a0a06;
+  --laptop-puerto: #080302; --laptop-puerto-luz: #7a5646;
+  --laptop-tapa-1: #2e2324; --laptop-tapa-2: #301e1d; --laptop-tapa-3: #241b20; --laptop-tapa-4: #19161b;
+  --laptop-tapa-reflejo: rgba(255, 160, 100, .03);
+  --laptop-canto-cielo: #8a8296; --laptop-canto-luz: #f1a15a; --laptop-canto-med: #bd7446; --laptop-canto-osc: #764a36;
+  --laptop-canto-fin: #45291f; --laptop-canto-brillo: #ffc888;
+  --laptop-sombra: rgba(8, 0, 0, .62); --laptop-sombra-tapa: rgba(4, 0, 0, .5); --laptop-oclusion: rgba(0, 0, 0, .96);
+  --laptop-sombra-base: rgba(20, 10, 20, 0); --laptop-sup-frente: rgba(50, 50, 76, .2);
+}

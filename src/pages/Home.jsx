@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import StixEmpresas from "../components/StixEmpresas";
 import CarruselProfesionales from "./partials/CarruselProfesionales";
 import FaqsHome from "./partials/FaqsHome";
+import { MomentosDelDia } from "../components/3d/MomentosDelDia";
 
 function Home() {
   const navigate = useNavigate();
@@ -15,7 +16,9 @@ function Home() {
         {/* contenido */}
         <Carousel />
       </main>
+      <MomentosDelDia />
       <HomeTab />
+
       <section>
         <section className="flex h-125  items-center justify-center px-6 text-center text-white">
           <div className="max-w-2xl flex flex-col gap-2 items-center">

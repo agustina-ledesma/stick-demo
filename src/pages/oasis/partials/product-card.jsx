@@ -55,7 +55,7 @@ export default function ProductCard() {
   };
 
   return (
-    <div className="flex min-h-screen w-full flex-col items-center justify-center gap-8">
+    <div className="flex min-h-screen w-full flex-col items-center justify-center gap-8 py-8">
       <div className="my-8 flex flex-col gap-3 text-center">
         <h2 className="text-2xl font-semibold uppercase text-white">
           Cada fórmula, por separado

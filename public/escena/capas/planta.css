@@ -1,0 +1,58 @@
+/* Capa planta: paletas por estado. h0-h6 = rampa de verdes de la hoja (h0 oclusión, h6 luz), hy = envés encendido.
+   m* = maceta en sombra, l* = banda de luz de la maceta, t* = tronco, v* = tallos verdes. */
+.e-amanecer {
+  --planta-h0: #231c02; --planta-h1: #2e2a02; --planta-h2: #463c02; --planta-h3: #564a02; --planta-h4: #6e5903;
+  --planta-h5: #978406; --planta-h6: #a39c08; --planta-hy: #dcb80c;
+  --planta-filo: #f6d83c; --planta-filo-o: .5; --planta-nervio: #c2a72c; --planta-lamp: #e9c24a;
+  --planta-p1: #b89a3a; --planta-p2: #7a6a24;
+  --planta-t1: #1c0a00; --planta-t2: #331505; --planta-t3: #6a3a14;
+  --planta-v1: #221a02; --planta-v2: #4a4004; --planta-v3: #8f7a0a;
+  --planta-m1: #a57054; --planta-m2: #ad7658; --planta-m3: #bf886b; --planta-m4: #dba680;
+  --planta-l1: #fde3b6; --planta-l2: #fff0c8; --planta-l3: #f8d39c;
+  --planta-ao: #5c2a0c; --planta-rebote: #f9a850; --planta-tierra: #2a1406;
+  --planta-sombra: #7a3a0c; --planta-sombra-o: .3; --planta-contacto: #4a1c04;
+  --planta-reflejo: #ffdf98; --planta-reflejo-o: .6;
+  --planta-pared: #6a4a10; --planta-pared-o: .5;
+}
+.e-mediodia {
+  --planta-h0: #1d2303; --planta-h1: #2a3104; --planta-h2: #3a4a05; --planta-h3: #4c5b06; --planta-h4: #667208;
+  --planta-h5: #8c9608; --planta-h6: #a4ad10; --planta-hy: #c9b91e;
+  --planta-filo: #c3c544; --planta-filo-o: .45; --planta-nervio: #a3ad34; --planta-lamp: #b9c35a;
+  --planta-p1: #a9a552; --planta-p2: #6f7030;
+  --planta-t1: #1a1402; --planta-t2: #2e2206; --planta-t3: #54421a;
+  --planta-v1: #232803; --planta-v2: #454e08; --planta-v3: #84901a;
+  --planta-m1: #a87e62; --planta-m2: #af8266; --planta-m3: #b68e75; --planta-m4: #d3aa8c;
+  --planta-l1: #fce4c4; --planta-l2: #fff3de; --planta-l3: #f7dcb8;
+  --planta-ao: #54301c; --planta-rebote: #fbc07a; --planta-tierra: #2a1c0e;
+  --planta-sombra: #8a4a1a; --planta-sombra-o: .3; --planta-contacto: #3a1a06;
+  --planta-reflejo: #ffe6b8; --planta-reflejo-o: .6;
+  --planta-pared: #5a4c1c; --planta-pared-o: .5;
+}
+.e-atardecer {
+  --planta-h0: #1e1808; --planta-h1: #29270a; --planta-h2: #3a3c0c; --planta-h3: #4b490e; --planta-h4: #655811;
+  --planta-h5: #8d7a15; --planta-h6: #a69020; --planta-hy: #dcaa30;
+  --planta-filo: #ffb866; --planta-filo-o: .5; --planta-nervio: #b8943c; --planta-lamp: #f0a860;
+  --planta-p1: #b88a40; --planta-p2: #75582a;
+  --planta-t1: #1a0c05; --planta-t2: #2c160a; --planta-t3: #563418;
+  --planta-v1: #1f1a08; --planta-v2: #453c0e; --planta-v3: #8a741c;
+  --planta-m1: #9c6658; --planta-m2: #a66c5a; --planta-m3: #b87c66; --planta-m4: #d99a7a;
+  --planta-l1: #ffd2a6; --planta-l2: #ffe2bc; --planta-l3: #f4bd8e;
+  --planta-ao: #4e2014; --planta-rebote: #f78e52; --planta-tierra: #26110a;
+  --planta-sombra: #6a2a1a; --planta-sombra-o: .34; --planta-contacto: #40160a;
+  --planta-reflejo: #ffc890; --planta-reflejo-o: .55;
+  --planta-pared: #5a3018; --planta-pared-o: .5;
+}
+.e-noche {
+  --planta-h0: #0a0d01; --planta-h1: #121601; --planta-h2: #1a2201; --planta-h3: #272c02; --planta-h4: #3a3503;
+  --planta-h5: #4f4a02; --planta-h6: #6b6602; --planta-hy: #9a8303;
+  --planta-filo: #9a9a3a; --planta-filo-o: .4; --planta-nervio: #6e6618; --planta-lamp: #c79a3c;
+  --planta-p1: #8a8a50; --planta-p2: #3a4418;
+  --planta-t1: #160a04; --planta-t2: #2e180b; --planta-t3: #6a4220;
+  --planta-v1: #0c0c01; --planta-v2: #232305; --planta-v3: #5a5010;
+  --planta-m1: #835a48; --planta-m2: #895a47; --planta-m3: #936451; --planta-m4: #b98463;
+  --planta-l1: #fbd49a; --planta-l2: #fde2ab; --planta-l3: #eec088;
+  --planta-ao: #2a1410; --planta-rebote: #f09a45; --planta-tierra: #0f0804;
+  --planta-sombra: #4a1c08; --planta-sombra-o: .3; --planta-contacto: #1c0803;
+  --planta-reflejo: #ffd890; --planta-reflejo-o: .7;
+  --planta-pared: #2e2408; --planta-pared-o: .55;
+}

@@ -1,0 +1,53 @@
+/* Capa cuaderno: 35 variables por estado. Amanecer, mediodía y noche salen de muestrear las referencias; atardecer se deriva. */
+.e-amanecer {
+  --cuaderno-tapa-izq: #ab7a62; --cuaderno-tapa-med: #dc9c69; --cuaderno-tapa-der: #fdd083;
+  --cuaderno-velo: #94664b; --cuaderno-velo-der: #c08456; --cuaderno-tapa-filo: #ffe6b4;
+  --cuaderno-canto: #4f2815; --cuaderno-canto-luz: #7a4426;
+  --cuaderno-hoja-izq: #86604d; --cuaderno-hoja-der: #94664f; --cuaderno-hoja-sombra: #4e2b19;
+  --cuaderno-hoja-lado: #a87659; --cuaderno-hoja-luz: #ffc57e; --cuaderno-hoja-linea: #6e4a3a;
+  --cuaderno-base: #33190e; --cuaderno-base-luz: #46291c; --cuaderno-base-osc: #120400;
+  --cuaderno-sombra: rgba(60, 14, 4, .42); --cuaderno-contacto: rgba(20, 4, 0, .85); --cuaderno-lap-sombra: rgba(40, 14, 6, .8);
+  --cuaderno-lap-negro: #0b0503; --cuaderno-lap-brillo: #513a2e; --cuaderno-lap-frio: #221a1b; --cuaderno-lap-rebote: #3a1a02; --cuaderno-lap-filo: #a8826a;
+  --cuaderno-metal-luz: #f0b672; --cuaderno-metal-med: #6e6262; --cuaderno-metal-osc: #2f1704; --cuaderno-metal-rebote: #9a5723;
+  --cuaderno-metal-oro: #b47238; --cuaderno-metal-blanco: #fed6a2; --cuaderno-punta-osc: #4e3020;
+  --cuaderno-clip-luz: #f2cfa6; --cuaderno-clip-osc: #8a6a56; --cuaderno-banda: #3c0e04;
+}
+.e-mediodia {
+  --cuaderno-tapa-izq: #c39977; --cuaderno-tapa-med: #edba88; --cuaderno-tapa-der: #f9cc9b;
+  --cuaderno-velo: #9d7759; --cuaderno-velo-der: #b8916e; --cuaderno-tapa-filo: #ffe8cc;
+  --cuaderno-canto: #5a341f; --cuaderno-canto-luz: #86583c;
+  --cuaderno-hoja-izq: #8a6b5a; --cuaderno-hoja-der: #956f5a; --cuaderno-hoja-sombra: #56301d;
+  --cuaderno-hoja-lado: #b08566; --cuaderno-hoja-luz: #fdc797; --cuaderno-hoja-linea: #73574a;
+  --cuaderno-base: #2e1d16; --cuaderno-base-luz: #402d26; --cuaderno-base-osc: #0e0500;
+  --cuaderno-sombra: rgba(50, 12, 0, .5); --cuaderno-contacto: rgba(16, 6, 0, .85); --cuaderno-lap-sombra: rgba(34, 20, 14, .78);
+  --cuaderno-lap-negro: #0b0806; --cuaderno-lap-brillo: #524238; --cuaderno-lap-frio: #1e1d22; --cuaderno-lap-rebote: #33200f; --cuaderno-lap-filo: #8f8a86;
+  --cuaderno-metal-luz: #f3d2a2; --cuaderno-metal-med: #656572; --cuaderno-metal-osc: #29170b; --cuaderno-metal-rebote: #985c27;
+  --cuaderno-metal-oro: #9a6338; --cuaderno-metal-blanco: #f6dcbc; --cuaderno-punta-osc: #4a3a30;
+  --cuaderno-clip-luz: #d9d9dc; --cuaderno-clip-osc: #7d7f85; --cuaderno-banda: #320c00;
+}
+.e-atardecer {
+  --cuaderno-tapa-izq: #a87266; --cuaderno-tapa-med: #d58f6e; --cuaderno-tapa-der: #f6b88a;
+  --cuaderno-velo: #7a5650; --cuaderno-velo-der: #9a6a58; --cuaderno-tapa-filo: #ffd6c0;
+  --cuaderno-canto: #4e2620; --cuaderno-canto-luz: #74402e;
+  --cuaderno-hoja-izq: #7c5a54; --cuaderno-hoja-der: #94685a; --cuaderno-hoja-sombra: #4a2620;
+  --cuaderno-hoja-lado: #7e5850; --cuaderno-hoja-luz: #ffb68a; --cuaderno-hoja-linea: #684842;
+  --cuaderno-base: #2c1616; --cuaderno-base-luz: #3e2424; --cuaderno-base-osc: #100406;
+  --cuaderno-sombra: rgba(64, 12, 22, .42); --cuaderno-contacto: rgba(20, 4, 6, .85); --cuaderno-lap-sombra: rgba(44, 14, 16, .75);
+  --cuaderno-lap-negro: #0c0507; --cuaderno-lap-brillo: #543a40; --cuaderno-lap-frio: #241a20; --cuaderno-lap-rebote: #3c1a12; --cuaderno-lap-filo: #b08480;
+  --cuaderno-metal-luz: #f4b48c; --cuaderno-metal-med: #70606a; --cuaderno-metal-osc: #2e1410; --cuaderno-metal-rebote: #9c4e2e;
+  --cuaderno-metal-oro: #b06444; --cuaderno-metal-blanco: #ffd0b4; --cuaderno-punta-osc: #4c2c2a;
+  --cuaderno-clip-luz: #f0c4b0; --cuaderno-clip-osc: #86626a; --cuaderno-banda: #400c16;
+}
+.e-noche {
+  --cuaderno-tapa-izq: #996b51; --cuaderno-tapa-med: #ca8a5c; --cuaderno-tapa-der: #e09e69;
+  --cuaderno-velo: #593e31; --cuaderno-velo-der: #5d4034; --cuaderno-tapa-filo: #f6c08a;
+  --cuaderno-canto: #33180d; --cuaderno-canto-luz: #56301e;
+  --cuaderno-hoja-izq: #60463d; --cuaderno-hoja-der: #6c4a3e; --cuaderno-hoja-sombra: #2f1a13;
+  --cuaderno-hoja-lado: #905e42; --cuaderno-hoja-luz: #eea570; --cuaderno-hoja-linea: #4c362e;
+  --cuaderno-base: #170d0a; --cuaderno-base-luz: #2a1c16; --cuaderno-base-osc: #030000;
+  --cuaderno-sombra: rgba(4, 0, 0, .6); --cuaderno-contacto: rgba(0, 0, 0, .9); --cuaderno-lap-sombra: rgba(14, 6, 4, .8);
+  --cuaderno-lap-negro: #020204; --cuaderno-lap-brillo: #2a262a; --cuaderno-lap-frio: #0c0d16; --cuaderno-lap-rebote: #230e02; --cuaderno-lap-filo: #5c6078;
+  --cuaderno-metal-luz: #b8926a; --cuaderno-metal-med: #4a4c60; --cuaderno-metal-osc: #120902; --cuaderno-metal-rebote: #854c22;
+  --cuaderno-metal-oro: #8e5424; --cuaderno-metal-blanco: #f6cb95; --cuaderno-punta-osc: #2a1a12;
+  --cuaderno-clip-luz: #b4a69c; --cuaderno-clip-osc: #4c4856; --cuaderno-banda: #040000;
+}

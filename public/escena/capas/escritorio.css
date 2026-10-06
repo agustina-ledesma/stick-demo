@@ -1,0 +1,49 @@
+/* Capa escritorio: una paleta por estado de luz. 21 variables, las mismas en los cuatro bloques. */
+.e-amanecer {
+  --escritorio-frente-a: #5e3a22; --escritorio-frente-b: #663e24; --escritorio-frente-c: #452f23;
+  --escritorio-madera-1: #ffcd84; --escritorio-madera-2: #f9b177; --escritorio-madera-3: #df9161;
+  --escritorio-tabla-osc: #c46a3a; --escritorio-tabla-clara: #ffd9a0;
+  --escritorio-veta: #b96234; --escritorio-veta-clara: #ffe0ad;
+  --escritorio-junta: #8a3e1c; --escritorio-junta-luz: #ffe2b0;
+  --escritorio-filo: #ffe6a8;
+  --escritorio-luz: #fff0a8; --escritorio-luz2: #ffd27c;
+  --escritorio-penumbra: #e2701c; --escritorio-sombra: #8f3a30;
+  --escritorio-contacto: #4a1608; --escritorio-reflejo: #7c1808;
+  --escritorio-vineta: #d4824a; --escritorio-esquina: #c8703a;
+}
+.e-mediodia {
+  --escritorio-frente-a: #5f4430; --escritorio-frente-b: #684731; --escritorio-frente-c: #533c2f;
+  --escritorio-madera-1: #fed4a2; --escritorio-madera-2: #f6c198; --escritorio-madera-3: #e0a683;
+  --escritorio-tabla-osc: #c98a5c; --escritorio-tabla-clara: #fff0d6;
+  --escritorio-veta: #b0764e; --escritorio-veta-clara: #fff1dc;
+  --escritorio-junta: #9a6440; --escritorio-junta-luz: #fff3df;
+  --escritorio-filo: #fff0d2;
+  --escritorio-luz: #fff0d2; --escritorio-luz2: #f7a252;
+  --escritorio-penumbra: #b98566; --escritorio-sombra: #5d4058;
+  --escritorio-contacto: #3a1a14; --escritorio-reflejo: #96280a;
+  --escritorio-vineta: #efb284; --escritorio-esquina: #db8338;
+}
+.e-atardecer {
+  --escritorio-frente-a: #4a2e2c; --escritorio-frente-b: #5a3530; --escritorio-frente-c: #6a3d30;
+  --escritorio-madera-1: #fbb07a; --escritorio-madera-2: #ee966a; --escritorio-madera-3: #cc745c;
+  --escritorio-tabla-osc: #b65c48; --escritorio-tabla-clara: #ffc9a0;
+  --escritorio-veta: #ac5446; --escritorio-veta-clara: #ffd3ae;
+  --escritorio-junta: #7e3430; --escritorio-junta-luz: #ffd8b4;
+  --escritorio-filo: #ffd4a0;
+  --escritorio-luz: #ffcf8a; --escritorio-luz2: #ff9a5c;
+  --escritorio-penumbra: #9a4458; --escritorio-sombra: #6e2c48;
+  --escritorio-contacto: #3c1018; --escritorio-reflejo: #74141c;
+  --escritorio-vineta: #a85a5a; --escritorio-esquina: #b8604a;
+}
+.e-noche {
+  --escritorio-frente-a: #2b1b12; --escritorio-frente-b: #241713; --escritorio-frente-c: #1e1513;
+  --escritorio-madera-1: #9a5743; --escritorio-madera-2: #8e5140; --escritorio-madera-3: #6c3e34;
+  --escritorio-tabla-osc: #63372c; --escritorio-tabla-clara: #c98764;
+  --escritorio-veta: #63362a; --escritorio-veta-clara: #d39670;
+  --escritorio-junta: #3a1c18; --escritorio-junta-luz: #d99c74;
+  --escritorio-filo: #e0a070;
+  --escritorio-luz: #ffa466; --escritorio-luz2: #ffc47c;
+  --escritorio-penumbra: #2a140c; --escritorio-sombra: #2a1c30;
+  --escritorio-contacto: #12060a; --escritorio-reflejo: #3d0806;
+  --escritorio-vineta: #7a3d1d; --escritorio-esquina: #86441f;
+}

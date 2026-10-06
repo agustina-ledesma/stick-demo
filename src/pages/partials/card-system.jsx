@@ -118,7 +118,7 @@ export default function SystemCard({ currentProduct }) {
   };
 
   return (
-    <div className="flex min-h-screen w-full flex-col items-center justify-center gap-8">
+    <div className="flex min-h-screen w-full flex-col items-center justify-center gap-8 py-8">
       <div className="my-8 flex flex-col px-4 gap-3 text-center">
         <h2 className="text-lg lg:text-2xl font-semibold uppercase text-white">
           elegí los productos que más necesitas

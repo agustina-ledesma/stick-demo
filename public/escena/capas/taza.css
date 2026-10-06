@@ -1,0 +1,63 @@
+/* Capa taza: paletas por estado. 42 variables, las mismas en los cuatro bloques.
+   c0-c6 = degradé transversal del cuerpo (c0 canto izquierdo, c4 el mínimo al 60 % del ancho, c6 canto derecho).
+   La taza está a contraluz en los cuatro estados: filo de luz angosto del lado del sol o la lámpara, cuerpo en sombra.
+   ao = sombra propia hacia la base, rebote = luz que devuelve el corcho, brillo = especular vertical,
+   filo = contraluz en el canto. borde* = labio, int* = interior de la boca, asa* = asa.
+   tapa/canto/mota = posavasos de corcho (canto1 y canto4 son las puntas, canto3 el centro en sombra).
+   sombra/contacto/reflejo = lo que la taza deja sobre la mesa. */
+.e-amanecer {
+  --taza-c0: #e2ac74; --taza-c1: #dc9360; --taza-c2: #bf7d57; --taza-c3: #a86f51; --taza-c4: #95654c; --taza-c5: #a67358; --taza-c6: #c08d6a;
+  --taza-ao: #3c1804; --taza-ao-o: .8; --taza-rebote: #f0a058; --taza-rebote-o: .15;
+  --taza-brillo: #ffc890; --taza-brillo-o: .4; --taza-filo: #ffdca0; --taza-filo-o: .9;
+  --taza-borde1: #cca48a; --taza-borde2: #c6a08a; --taza-borde3: #a8826c;
+  --taza-int1: #a8846e; --taza-int2: #977058; --taza-int3: #d8ac8a;
+  --taza-asa1: #a87254; --taza-asa2: #c08058; --taza-asa3: #a0694c;
+  --taza-asa-luz: #d89a70; --taza-asa-luz-o: .25; --taza-asa-filo: #e0b08a; --taza-asa-filo-o: .5;
+  --taza-tapa1: #bc6c34; --taza-tapa2: #9b5f37;
+  --taza-canto1: #c45a16; --taza-canto2: #7a3208; --taza-canto3: #4a1803; --taza-canto4: #c47236;
+  --taza-mota-o: #3a1002; --taza-mota-c: #b06a30; --taza-corcho-filo: #f0a050;
+  --taza-sombra: #7a2c10; --taza-sombra-o: .7; --taza-contacto: #3c1606;
+  --taza-reflejo: #ffb05a; --taza-reflejo-o: .45;
+}
+.e-mediodia {
+  --taza-c0: #d8b494; --taza-c1: #d3a078; --taza-c2: #b98867; --taza-c3: #a2795f; --taza-c4: #8e6c58; --taza-c5: #9d7964; --taza-c6: #b6947b;
+  --taza-ao: #3e2010; --taza-ao-o: .8; --taza-rebote: #e8a868; --taza-rebote-o: .15;
+  --taza-brillo: #e6c4a4; --taza-brillo-o: .4; --taza-filo: #f0d8be; --taza-filo-o: .6;
+  --taza-borde1: #c8b4a2; --taza-borde2: #c6b4a6; --taza-borde3: #a5938a;
+  --taza-int1: #9a8880; --taza-int2: #937b6a; --taza-int3: #d2bca8;
+  --taza-asa1: #a07a62; --taza-asa2: #b28769; --taza-asa3: #9c7459;
+  --taza-asa-luz: #c69c7e; --taza-asa-luz-o: .25; --taza-asa-filo: #cfa98a; --taza-asa-filo-o: .5;
+  --taza-tapa1: #b4703e; --taza-tapa2: #9a6642;
+  --taza-canto1: #a8541e; --taza-canto2: #7c3a0e; --taza-canto3: #441c05; --taza-canto4: #bc7440;
+  --taza-mota-o: #3a1604; --taza-mota-c: #a8703f; --taza-corcho-filo: #d89860;
+  --taza-sombra: #5a2e1c; --taza-sombra-o: .45; --taza-contacto: #2e1408;
+  --taza-reflejo: #f0a45c; --taza-reflejo-o: .4;
+}
+.e-atardecer {
+  --taza-c0: #b88a80; --taza-c1: #a47878; --taza-c2: #986e70; --taza-c3: #946a6c; --taza-c4: #aa7870; --taza-c5: #d89c84; --taza-c6: #ffcfa0;
+  --taza-ao: #4a1c24; --taza-ao-o: .75; --taza-rebote: #f08a58; --taza-rebote-o: .2;
+  --taza-brillo: #ffd0a8; --taza-brillo-o: .4; --taza-filo: #ffcf96; --taza-filo-o: .95;
+  --taza-borde1: #b08a84; --taza-borde2: #c8a090; --taza-borde3: #e8c0a0;
+  --taza-int1: #d8a890; --taza-int2: #a47c74; --taza-int3: #8a6668;
+  --taza-asa1: #c89684; --taza-asa2: #d09a80; --taza-asa3: #a07074;
+  --taza-asa-luz: #f0bc9c; --taza-asa-luz-o: .3; --taza-asa-filo: #f0c4a4; --taza-asa-filo-o: .5;
+  --taza-tapa1: #9a5e40; --taza-tapa2: #c4743c;
+  --taza-canto1: #a85c30; --taza-canto2: #6e3018; --taza-canto3: #4c1c10; --taza-canto4: #c4642a;
+  --taza-mota-o: #3a1208; --taza-mota-c: #c47a44; --taza-corcho-filo: #ffb878;
+  --taza-sombra: #6a2638; --taza-sombra-o: .5; --taza-contacto: #36101a;
+  --taza-reflejo: #f88a5a; --taza-reflejo-o: .35;
+}
+.e-noche {
+  --taza-c0: #d8a468; --taza-c1: #e29b5c; --taza-c2: #a26546; --taza-c3: #795142; --taza-c4: #614540; --taza-c5: #725046; --taza-c6: #8f6650;
+  --taza-ao: #1e0c04; --taza-ao-o: .8; --taza-rebote: #d8843e; --taza-rebote-o: .15;
+  --taza-brillo: #f6b872; --taza-brillo-o: .5; --taza-filo: #f6c88c; --taza-filo-o: .7;
+  --taza-borde1: #a88670; --taza-borde2: #9a7e72; --taza-borde3: #806862;
+  --taza-int1: #7a625a; --taza-int2: #6f544a; --taza-int3: #b88e72;
+  --taza-asa1: #6e4c40; --taza-asa2: #a86a44; --taza-asa3: #74492f;
+  --taza-asa-luz: #b47649; --taza-asa-luz-o: .2; --taza-asa-filo: #b8845c; --taza-asa-filo-o: .45;
+  --taza-tapa1: #b85c22; --taza-tapa2: #7c4424;
+  --taza-canto1: #c4580f; --taza-canto2: #5c2204; --taza-canto3: #2e0c01; --taza-canto4: #b85e22;
+  --taza-mota-o: #1e0800; --taza-mota-c: #8a4a1c; --taza-corcho-filo: #e88a40;
+  --taza-sombra: #1c0a08; --taza-sombra-o: .55; --taza-contacto: #240c03;
+  --taza-reflejo: #e88838; --taza-reflejo-o: .35;
+}

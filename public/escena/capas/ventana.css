@@ -1,0 +1,77 @@
+/* Capa ventana: pared izquierda, marco, parante, antepecho y reflejo del vidrio. Una paleta por estado. */
+.e-amanecer {
+  --ventana-pared-a: #986949; --ventana-pared-b: #9d6841; --ventana-pared-c: #a46a42;
+  --ventana-jamba-a: #fddda6; --ventana-jamba-b: #fedea4; --ventana-jamba-c: #fedc9c; --ventana-jamba-d: #fdd28d; --ventana-jamba-e: #fdca8c; --ventana-jamba-f: #fbcd92;
+  --ventana-marco-a: #6b4a37; --ventana-marco-b: #553b2f; --ventana-marco-c: #37271a; --ventana-marco-d: #24170b; --ventana-marco-e: #3a2316; --ventana-marco-f: #4f3422; --ventana-marco-g: #553620;
+  --ventana-lado-a: #d8a778; --ventana-lado-b: #d59e6c; --ventana-lado-c: #be8b61;
+  --ventana-filo: #edbc8a;
+  --ventana-burlete-a: #4e2e16; --ventana-burlete-b: #3a2112;
+  --ventana-junq-a: #efc494; --ventana-junq-b: #f1c494; --ventana-junq-c: #f8c98e; --ventana-junq-d: #d7a066; --ventana-junq-e: #c8936a;
+  --ventana-plado-a: #bb8f70; --ventana-plado-b: #b08264; --ventana-plado-c: #a17253;
+  --ventana-pfilo: .09;
+  --ventana-parante-a: #38302e; --ventana-parante-b: #382a23; --ventana-parante-c: #432e23;
+  --ventana-canto-a: #e6b188; --ventana-canto-b: #e9b488; --ventana-canto-c: #edb889; --ventana-canto-d: #e2af87; --ventana-canto-e: #bf9a86; --ventana-canto-f: #a88a7e;
+  --ventana-brillo: #ffe6a4; --ventana-brillo-halo: .5;
+  --ventana-frente-a: #b08a6a; --ventana-frente-b: #6a4630; --ventana-frente-c: #3e220e; --ventana-frente-d: #5c3921; --ventana-frente-e: #7a4423; --ventana-frente-f: #623b21; --ventana-frente-g: #553323; --ventana-frente-h: #432e23; --ventana-frente-i: #3f2a22;
+  --ventana-sombra: #2a1206; --ventana-sombra-fria: #231f24;
+  --ventana-sombra-hoja: #a8662f; --ventana-sombra-hoja-op: .32;
+  --ventana-rebote: #8a5226;
+  --ventana-reflejo: .075; --ventana-reflejo-color: #fff0d8;
+}
+.e-mediodia {
+  --ventana-pared-a: #8e6f57; --ventana-pared-b: #94735b; --ventana-pared-c: #946f55;
+  --ventana-jamba-a: #fde7c8; --ventana-jamba-b: #fce6c5; --ventana-jamba-c: #fbe4c1; --ventana-jamba-d: #f8d5ad; --ventana-jamba-e: #fad8b1; --ventana-jamba-f: #f7d9b4;
+  --ventana-marco-a: #5c4c44; --ventana-marco-b: #483e38; --ventana-marco-c: #372f2b; --ventana-marco-d: #261f1a; --ventana-marco-e: #3a302a; --ventana-marco-f: #4a3d34; --ventana-marco-g: #514135;
+  --ventana-lado-a: #cbb49b; --ventana-lado-b: #bba385; --ventana-lado-c: #a8917b;
+  --ventana-filo: #e6caac;
+  --ventana-burlete-a: #594736; --ventana-burlete-b: #352c25;
+  --ventana-junq-a: #f8dabe; --ventana-junq-b: #f3dabf; --ventana-junq-c: #f1d9bf; --ventana-junq-d: #c3b2a1; --ventana-junq-e: #b29e8c;
+  --ventana-plado-a: #a9a09f; --ventana-plado-b: #968d8b; --ventana-plado-c: #96806f;
+  --ventana-pfilo: .07;
+  --ventana-parante-a: #3b3b3f; --ventana-parante-b: #3c3736; --ventana-parante-c: #413530;
+  --ventana-canto-a: #c2b3a6; --ventana-canto-b: #c4b4a8; --ventana-canto-c: #dcc8b5; --ventana-canto-d: #f6e2c8; --ventana-canto-e: #eadbcd; --ventana-canto-f: #d5c8be;
+  --ventana-brillo: #fff5df; --ventana-brillo-halo: .45;
+  --ventana-frente-a: #b39c86; --ventana-frente-b: #6a5646; --ventana-frente-c: #3a2e1e; --ventana-frente-d: #5a4231; --ventana-frente-e: #5e4331; --ventana-frente-f: #624531; --ventana-frente-g: #6b4a33; --ventana-frente-h: #4e3b2f; --ventana-frente-i: #43342e;
+  --ventana-sombra: #4a2c18; --ventana-sombra-fria: #232a36;
+  --ventana-sombra-hoja: #8e6f52; --ventana-sombra-hoja-op: .32;
+  --ventana-rebote: #80583a;
+  --ventana-reflejo: .09; --ventana-reflejo-color: #ffffff;
+}
+.e-atardecer {
+  --ventana-pared-a: #8f6258; --ventana-pared-b: #95604f; --ventana-pared-c: #9b6049;
+  --ventana-jamba-a: #ffc9a8; --ventana-jamba-b: #ffc6a0; --ventana-jamba-c: #fec097; --ventana-jamba-d: #fbb58a; --ventana-jamba-e: #f6ab82; --ventana-jamba-f: #f0a67f;
+  --ventana-marco-a: #603e38; --ventana-marco-b: #4b2f2c; --ventana-marco-c: #35221f; --ventana-marco-d: #221412; --ventana-marco-e: #38211f; --ventana-marco-f: #4b2d29; --ventana-marco-g: #52302b;
+  --ventana-lado-a: #f0b08c; --ventana-lado-b: #e8a07c; --ventana-lado-c: #c98469;
+  --ventana-filo: #ffc9a2;
+  --ventana-burlete-a: #4a2820; --ventana-burlete-b: #371c18;
+  --ventana-junq-a: #ffcaa8; --ventana-junq-b: #fec4a0; --ventana-junq-c: #fbb98e; --ventana-junq-d: #d99373; --ventana-junq-e: #c5836a;
+  --ventana-plado-a: #dd9c80; --ventana-plado-b: #efac80; --ventana-plado-c: #f6b072;
+  --ventana-pfilo: .32;
+  --ventana-parante-a: #382a33; --ventana-parante-b: #3c282b; --ventana-parante-c: #482c29;
+  --ventana-canto-a: #c79f9c; --ventana-canto-b: #cfa399; --ventana-canto-c: #dcaa96; --ventana-canto-d: #e9b190; --ventana-canto-e: #f6bd8c; --ventana-canto-f: #e9ac86;
+  --ventana-brillo: #ffe0a8; --ventana-brillo-halo: .55;
+  --ventana-frente-a: #a67a6c; --ventana-frente-b: #62403a; --ventana-frente-c: #351b18; --ventana-frente-d: #4f2f2b; --ventana-frente-e: #55312c; --ventana-frente-f: #5a332c; --ventana-frente-g: #63372c; --ventana-frente-h: #74422d; --ventana-frente-i: #5c352c;
+  --ventana-sombra: #2a1210; --ventana-sombra-fria: #261a2a;
+  --ventana-sombra-hoja: #a85f48; --ventana-sombra-hoja-op: .32;
+  --ventana-rebote: #8a4636;
+  --ventana-reflejo: .05; --ventana-reflejo-color: #ffe6d8;
+}
+.e-noche {
+  --ventana-pared-a: #382c28; --ventana-pared-b: #4a352b; --ventana-pared-c: #65432e;
+  --ventana-jamba-a: #a57758; --ventana-jamba-b: #a27456; --ventana-jamba-c: #d4a06e; --ventana-jamba-d: #dca468; --ventana-jamba-e: #9b6a4d; --ventana-jamba-f: #775241;
+  --ventana-marco-a: #2a2022; --ventana-marco-b: #1c191f; --ventana-marco-c: #110e0f; --ventana-marco-d: #050505; --ventana-marco-e: #0a0a0a; --ventana-marco-f: #110e0f; --ventana-marco-g: #150f0c;
+  --ventana-lado-a: #805f4a; --ventana-lado-b: #71523f; --ventana-lado-c: #4c3b33;
+  --ventana-filo: #b38462;
+  --ventana-burlete-a: #1e1008; --ventana-burlete-b: #100a08;
+  --ventana-junq-a: #f9c99d; --ventana-junq-b: #cb9c78; --ventana-junq-c: #6f5855; --ventana-junq-d: #554241; --ventana-junq-e: #42332e;
+  --ventana-plado-a: #372e38; --ventana-plado-b: #413031; --ventana-plado-c: #4e362e;
+  --ventana-pfilo: .06;
+  --ventana-parante-a: #0c0e14; --ventana-parante-b: #0e0d10; --ventana-parante-c: #110d0e;
+  --ventana-canto-a: #32313e; --ventana-canto-b: #32313e; --ventana-canto-c: #413c46; --ventana-canto-d: #6f5653; --ventana-canto-e: #6d5656; --ventana-canto-f: #564750;
+  --ventana-brillo: #d8a172; --ventana-brillo-halo: .3;
+  --ventana-frente-a: #46312c; --ventana-frente-b: #261a16; --ventana-frente-c: #150c08; --ventana-frente-d: #2d1e15; --ventana-frente-e: #231613; --ventana-frente-f: #221712; --ventana-frente-g: #291912; --ventana-frente-h: #1b1412; --ventana-frente-i: #160f0f;
+  --ventana-sombra: #1c1210; --ventana-sombra-fria: #000918;
+  --ventana-sombra-hoja: #3a2418; --ventana-sombra-hoja-op: .68;
+  --ventana-rebote: #64381a;
+  --ventana-reflejo: .04; --ventana-reflejo-color: #cfd8ff;
+}
