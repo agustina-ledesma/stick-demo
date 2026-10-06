@@ -173,7 +173,7 @@ export default function Contacto() {
 
                     <button
                       type="button"
-                      onClick={() => navigate("/suscripcion")}
+                      onClick={() => navigate("/suscription")}
                       className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gray-50 text-gray-400"
                     >
                       <ArrowRight size={14} strokeWidth={4} />
