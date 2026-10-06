@@ -71,9 +71,9 @@ function Navbar() {
 
   return (
     <>
-      <nav className="fixed left-1/2 top-4 z-50 w-[calc(100%-32px)] max-w-8xl -translate-x-1/2">
+      <nav className="pointer-events-none fixed left-1/2 top-4 z-50 w-[calc(100%-32px)] max-w-8xl -translate-x-1/2">
         {/* NAVBAR */}
-        <div className="flex h-14 items-center justify-between">
+        <div className="pointer-events-auto flex h-14 items-center justify-between">
           {/* DESKTOP */}
           <div
             className={`relative hidden h-12 max-w-xl items-center gap-6 rounded-full px-4 backdrop-blur-xl md:flex ${
@@ -317,7 +317,7 @@ function Navbar() {
 
         {/* MOBILE MENU */}
         <div
-          className={`mt-2 max-h-[calc(100vh-100px)] overflow-y-auto overflow-x-hidden rounded-3xl backdrop-blur-xl transition-all duration-300 md:hidden ${
+          className={`pointer-events-auto mt-2 max-h-[calc(100vh-100px)] overflow-y-auto overflow-x-hidden rounded-2xl backdrop-blur-xl transition-all duration-300 md:hidden ${
             menuOpen
               ? "h-fit opacity-100"
               : "pointer-events-none max-h-0 opacity-0"
