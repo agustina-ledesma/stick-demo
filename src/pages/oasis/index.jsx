@@ -602,11 +602,13 @@ export default function Oasis() {
                     </div>
                   </div>
 
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs uppercase font-semibold">
+                 
+                  <div className="flex flex-col items-start gap-2 md:flex-row md:items-center md:justify-between">
+                    <span className="text-xs font-semibold uppercase">
                       Beneficio suscripción
                     </span>
-                    <div className="inline-flex w-fit items-center gap-2 rounded-full uppercase bg-[#F89437] px-3 py-1 text-xs font-semibold text-white">
+
+                    <div className="inline-flex w-fit items-center gap-2 rounded-full bg-[#F89437] px-3 py-1 text-xs font-semibold uppercase text-white">
                       <span>25 % de descuento</span>
                     </div>
                   </div>

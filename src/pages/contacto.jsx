@@ -173,7 +173,7 @@ export default function Contacto() {
 
                     <button
                       type="button"
-                      onClick={() => navigate("/suscription")}
+                      onClick={() => navigate("/subscription")}
                       className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gray-50 text-gray-400"
                     >
                       <ArrowRight size={14} strokeWidth={4} />
@@ -373,9 +373,9 @@ export default function Contacto() {
             <h2 className="uppercase font-semibold text-2xl md:text-3xl">
               Encontrá Stix en nuestra tienda online
             </h2>
-            <p className="text-sm uppercase max-w-2xl  mx-auto text-center">
+            <p className="text-sm px-4  uppercase max-w-2xl  mx-auto text-center">
               Elegí un producto, armá tu System o llevá el PROTOCOLO completo
-              desde la tienda online. También podés elegir entre una compra
+              desde la tienda online.  <br/> También podés elegir entre una compra
               única y una compra recurrente.
             </p>
             <button

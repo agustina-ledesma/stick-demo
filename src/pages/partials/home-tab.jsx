@@ -113,7 +113,7 @@ export default function HomeTab() {
               <button
                 type="button"
                 onClick={() => navigate("/oasis")}
-                className="py-2  w-fit rounded-full bg-white px-6 font-semibold text-[#72000E]"
+                className="py-2  w-fit rounded-full bg-white px-6 mx-auto md:mx-0 font-semibold text-[#72000E]"
               >
                 COMPRAR
               </button>

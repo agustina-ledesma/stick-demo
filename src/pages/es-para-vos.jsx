@@ -92,7 +92,7 @@ export default function EsParaVos() {
                       </span>
                     </div>
 
-                    <p className="mt-3 text-xs leading-[1.45] text-secondary md:text-sm">
+                    <p className="mt-3 text-sm leading-[1.45] text-secondary md:text-sm">
                       Tomalo por la mañana, a media mañana o entre 40 y 60
                       minutos antes de una tarea exigente. Evitá usarlo cerca de
                       la noche porque contiene cafeína.
@@ -111,7 +111,7 @@ export default function EsParaVos() {
                       </span>
                     </div>
 
-                    <p className="mt-3 text-xs leading-[1.45] text-secondary md:text-sm">
+                    <p className="mt-3 text-sm leading-[1.45] text-secondary md:text-sm">
                       Tomalo durante el día, idealmente con el almuerzo. Evitá
                       usarlo después de las 19:00.
                     </p>
@@ -129,7 +129,7 @@ export default function EsParaVos() {
                       </span>
                     </div>
 
-                    <p className="mt-3 text-xs leading-[1.45] text-secondary md:text-sm">
+                    <p className="mt-3 text-sm leading-[1.45] text-secondary md:text-sm">
                       Se toma unos 40 minutos antes de dormir, para pasar de la
                       actividad al descanso. No hace falta tomarlos juntos: cada
                       uno tiene su momento dentro del día.
@@ -150,7 +150,7 @@ export default function EsParaVos() {
 
             {/* INFORMACIÓN + CTA */}
             <div className="mt-10 flex flex-col gap-5 rounded-xl bg-white p-6  md:flex-row md:items-center md:justify-between md:px-8 md:py-6 lg:mt-14 lg:px-9">
-              <p className="max-w-3xl text-xs leading-relaxed text-secondary md:text-sm">
+              <p className="max-w-3xl text-sm leading-relaxed text-secondary md:text-sm">
                 Disolvé el contenido de un sobre en agua y tomalo en el momento
                 que corresponda.
                 <br className="hidden md:block" />
@@ -175,7 +175,7 @@ export default function EsParaVos() {
         >
             <div className="flex flex-col p-8 gap-2 mx-auto text-center text-white">
                 <h2 className="uppercase font-semibold text-2xl md:text-3xl">Encontrá una forma más simple de acompañar tu día</h2>
-                <p className="text-sm uppercase font-semibold">Elegí el producto que mejor encaja con tu jornada y empezá por ahí.</p>
+                <p className="text-md uppercase font-semibold">Elegí el producto que mejor encaja con tu jornada y empezá por ahí.</p>
                  <button
                   type="button"
                   onClick={() => navigate("/system")}

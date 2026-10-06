@@ -66,7 +66,7 @@ function Home() {
           </p>
           <button
             type="button"
-            onClick={() => navigate("/suscription")}
+            onClick={() => navigate("/subscription")}
             className="mt-6 w-fit mx-auto  rounded-full bg-white text-[#72000E] px-6 py-3 text-sm font-semibold uppercase"
           >
             ver suscripción

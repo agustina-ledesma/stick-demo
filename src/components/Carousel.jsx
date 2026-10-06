@@ -109,7 +109,7 @@ export default function Carousel() {
 
         {/* Contenido inferior */}
         <div className="absolute inset-x-0 bottom-0 z-10 px-6 pb-16 md:px-10 lg:px-16">
-          <div className="grid gap-8 md:grid-cols-2 md:items-end">
+          <div className="grid gap-4 md:gap-8 md:grid-cols-2 md:items-end">
             {/* Columna izquierda */}
             <div className="flex flex-col items-start">
               <motion.h1
@@ -131,7 +131,6 @@ export default function Carousel() {
                 className="mt-5 inline-flex h-12 items-center gap-3 rounded-full bg-[#72000E] px-6 text-md font-semibold uppercase text-white"
               >
                 {currentItem.button}
-    
               </motion.a>
             </div>
 
@@ -142,7 +141,7 @@ export default function Carousel() {
                 necesitás:
               </p>
 
-              <div className="mt-5 flex flex-wrap gap-2">
+              {/*  <div className="mt-5 flex flex-wrap gap-2">
                 <span className="rounded-full border uppercase font-semibold border-white/20 bg-white/10 px-4 py-2 text-xs text-white backdrop-blur-md">
                   Foco sostenido
                 </span>
@@ -152,6 +151,19 @@ export default function Carousel() {
                 </span>
 
                 <span className="rounded-full border uppercase font-semibold border-white/20 bg-white/10 px-4 py-2 text-xs text-white backdrop-blur-md">
+                  Descanso reparador
+                </span>
+              </div> */}
+              <div className="mt-5 flex flex-wrap gap-1.5 sm:gap-2">
+                <span className="rounded-full border border-white/20 bg-white/10 px-2.5 py-1.5 text-[9px] font-semibold uppercase text-white backdrop-blur-md sm:px-4 sm:py-2 sm:text-xs">
+                  Foco sostenido
+                </span>
+
+                <span className="rounded-full border border-white/20 bg-white/10 px-2.5 py-1.5 text-[9px] font-semibold uppercase text-white backdrop-blur-md sm:px-4 sm:py-2 sm:text-xs">
+                  Hidratación efectiva
+                </span>
+
+                <span className="rounded-full border border-white/20 bg-white/10 px-2.5 py-1.5 text-[9px] font-semibold uppercase text-white backdrop-blur-md sm:px-4 sm:py-2 sm:text-xs">
                   Descanso reparador
                 </span>
               </div>

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import products from "../../../data/products.json";
 import SystemCard from "../../partials/card-system";
 import ProductContent from "../../partials/products-content";
+import { useNavigate } from "react-router-dom";
 
 import { Truck, ChevronDown } from "lucide-react";
 
@@ -10,6 +11,8 @@ export default function Product() {
   const { product } = useParams();
 
   const currentProduct = products[product];
+
+  const navigate = useNavigate();
 
   const [selectedSize, setSelectedSize] = useState(null);
   const [quantity, setQuantity] = useState(1);

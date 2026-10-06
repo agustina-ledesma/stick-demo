@@ -27,7 +27,7 @@ function App() {
         <Route path="/es-para-vos" element={<EsParaVos />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/faqs" element={<Faqs />} />
-        <Route path="/suscription" element={<Suscription />} />
+        <Route path="/subscription" element={<Suscription />} />
       </Routes>
       <Footer />
     </BrowserRouter>

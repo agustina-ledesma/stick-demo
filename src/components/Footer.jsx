@@ -27,7 +27,7 @@ export default function Footer() {
             </Link>
 
             <Link
-              to="/suscription"
+              to="/subscription"
               className="w-fit text-sm font-medium  uppercase transition-opacity hover:opacity-70"
             >
               Suscripción
