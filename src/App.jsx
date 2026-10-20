@@ -11,6 +11,7 @@ import EsParaVos from "./pages/es-para-vos";
 import Contacto from "./pages/contacto";
 import Faqs from "./pages/faqs";
 import Suscription from "./pages/suscription";
+import Sharp from "./pages/sharp/index";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/faqs" element={<Faqs />} />
         <Route path="/subscription" element={<Suscription />} />
+        <Route path="/sharp" element={<Sharp />} />
       </Routes>
       <Footer />
     </BrowserRouter>

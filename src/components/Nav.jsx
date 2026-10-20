@@ -140,7 +140,7 @@ function Navbar() {
               }`}
             >
               <Link
-                to="/product/sharp"
+                to="/sharp"
                 className="block rounded-xl px- m-3 py-2 text-sm text-white/70 transition hover:bg-white/10 hover:text-white"
               >
                 <div className="flex w-full gap-4 p-2">
@@ -171,7 +171,7 @@ function Navbar() {
                 </div>
               </Link>
 
-              <Link
+           {/*    <Link
                 to="/product/hydrate"
                 className="block rounded-xl px- m-3 py-2 text-sm text-white/70 transition hover:bg-white/10 hover:text-white"
               >
@@ -291,7 +291,7 @@ function Navbar() {
                     <span className="text-md">El protocolo completo</span>
                   </div>
                 </div>
-              </Link>
+              </Link> */}
             </div>
           </div>
 
@@ -334,7 +334,7 @@ function Navbar() {
               <div className="mt-4 flex flex-col gap-4">
                 {/* SHARP */}
                 <Link
-                  to="/product/sharp"
+                  to="/sharp"
                   onClick={closeMobileMenu}
                   className="flex items-center gap-3 rounded-xl p-2 text-white uppercase transition hover:bg-white/10"
                 >
@@ -358,8 +358,8 @@ function Navbar() {
                   </div>
                 </Link>
 
-                {/* HYDRATE */}
-                <Link
+               
+               {/*  <Link
                   to="/product/hydrate"
                   onClick={closeMobileMenu}
                   className="flex items-center gap-3 rounded-xl p-2 text-white/70 uppercase transition hover:bg-white/10 hover:text-white"
@@ -384,7 +384,7 @@ function Navbar() {
                   </div>
                 </Link>
 
-                {/* RESET */}
+            
                 <Link
                   to="/product/reset"
                   onClick={closeMobileMenu}
@@ -410,7 +410,7 @@ function Navbar() {
                   </div>
                 </Link>
 
-                {/* SYSTEM */}
+              
                 <Link
                   to="/system"
                   onClick={closeMobileMenu}
@@ -435,7 +435,7 @@ function Navbar() {
                   </div>
                 </Link>
 
-                {/* OASIS */}
+              
                 <Link
                   to="/oasis"
                   onClick={closeMobileMenu}
@@ -458,7 +458,7 @@ function Navbar() {
                       AHORRA UN 25%
                     </div>
                   </div>
-                </Link>
+                </Link> */}
               </div>
             </div>
 
