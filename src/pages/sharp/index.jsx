@@ -97,7 +97,7 @@ export default function Sharp() {
             {/* Área del producto: ocupa una pantalla completa */}
 
             {/* Área del producto */}
-            <div className="relative h-[100svh] min-h-[100svh] w-full shrink-0 overflow-hidden touch-pan-y bg-[linear-gradient(90deg,rgba(20,20,20,1)_0%,rgba(114,0,14,1)_100%)]">
+            <div className="relative h-[100svh] min-h-[100svh] w-full shrink-0 overflow-hidden touch-pan-y bg-[linear-gradient(90deg,rgba(20,20,20,1)_0%,rgba(114,0,14,1)_100%)] flex items-center">
               <StixSharp3d style={{ height: "80%", touchAction: "pan-y" }} />
             </div>
 
