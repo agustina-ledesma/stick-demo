@@ -95,7 +95,7 @@ export default function Sharp() {
           {/* SECCIÓN FÓRMULA */}
           <section className="flex flex-col bg-white text-gray-600">
             {/* Área del producto: ocupa una pantalla completa */}
-            <div className=" pointer-events-auto relative h-screen flex items-center min-h-[100svh] w-full overflow-hidden bg-[linear-gradient(90deg,rgba(20,20,20,1)_0%,rgba(114,0,14,1)_100%)]">
+            <div className="relative h-screen flex items-center min-h-[100svh] w-full overflow-hidden bg-[linear-gradient(90deg,rgba(20,20,20,1)_0%,rgba(114,0,14,1)_100%)]">
               <StixSharp3d style={{ height: "80%" }} />
             </div>
 
