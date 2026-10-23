@@ -74,7 +74,7 @@ export default function ProductCards() {
             return (
               <article
                 key={product.id}
-                className="flex min-w-0 max-w-[300px] max-h-[470] flex-[0_0_100%] snap-center flex-col rounded-2xl bg-[linear-gradient(90deg,rgba(20,20,20,1)_0%,rgba(114,0,14,1)_100%)] p-4"
+                className="flex min-w-0 max-w-[300px] h-fit flex-[0_0_100%] snap-center flex-col rounded-2xl bg-[linear-gradient(90deg,rgba(20,20,20,1)_0%,rgba(114,0,14,1)_100%)] p-4"
               >
                 <div className="flex shrink-0 items-center justify-between gap-2">
                   <GlassPill
@@ -143,7 +143,7 @@ export default function ProductCards() {
           return (
             <article
               key={product.id}
-              className="flex w-full max-w-[390px] mx-auto max-h-[470] flex-col rounded-2xl bg-[linear-gradient(90deg,rgba(20,20,20,1)_0%,rgba(114,0,14,1)_100%)] p-5 lg:p-6"
+              className="flex w-full max-w-[390px] mx-auto h-fit flex-col rounded-2xl bg-[linear-gradient(90deg,rgba(20,20,20,1)_0%,rgba(114,0,14,1)_100%)] p-5 lg:p-6"
             >
               <div className="flex shrink-0 items-center justify-between gap-2">
                 <GlassPill
