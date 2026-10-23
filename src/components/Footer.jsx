@@ -1,124 +1,145 @@
 import { Link } from "react-router-dom";
 
+const columns = [
+  {
+    title: "Productos",
+    links: [
+      { label: "SHARP", to: "/productos/sharp" },
+      { label: "HYDRATE", to: "/productos/hydrate" },
+      { label: "RESET", to: "/productos/reset" },
+      { label: "System", to: "/productos/system" },
+      { label: "Oasis", to: "/productos/oasis" },
+    ],
+  },
+  {
+    title: "Stix",
+    links: [
+      { label: "Ciencia", to: "/ciencia" },
+      { label: "¿Es para vos?", to: "/es-para-vos" },
+      { label: "Empresas", to: "/empresas" },
+      { label: "Suscripción", to: "/subscription" },
+    ],
+  },
+  {
+    title: "Ayuda",
+    links: [
+      { label: "Preguntas frecuentes", to: "/faqs" },
+      { label: "Envíos y devoluciones", to: "/envios-y-devoluciones" },
+      { label: "Contacto", to: "/contacto" },
+      { label: "Botón de arrepentimiento", to: "/arrepentimiento" },
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      { label: "Términos y condiciones", to: "/terminos-y-condiciones" },
+      { label: "Política de privacidad", to: "/politica-de-privacidad" },
+      { label: "Defensa del consumidor", to: "/defensa-del-consumidor" },
+    ],
+  },
+];
+
+function InstagramIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className="h-5 w-5"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      aria-hidden="true"
+    >
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.2" cy="6.8" r="0.9" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+function WhatsappIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className="h-5 w-5"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M3 21l1.65-4.9A8.5 8.5 0 1 1 8 19.4L3 21z" />
+      <path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1.2-1.4-2.2-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2.2L9 8.5z" />
+    </svg>
+  );
+}
+
 export default function Footer() {
   return (
-    <>
-      <footer className="bg-gradient-to-b from-black to-[#1c1e1d] px-6 pb-10 pt-20 text-white md:px-20">
-        <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-12 px-6 py-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-8 lg:px-0">
-          {/* COLUMNA 1 — LOGO + DISCLAIMER */}
-          <div className="flex flex-col gap-4">
-            <Link to="/" className="w-fit">
-              <img src="/logo-stix.svg" alt="Stix" className="h-6 w-auto" />
-            </Link>
+    <footer className="rounded-t-4xl bg-[#72000e] px-6 pb-10 pt-20 text-white md:px-20">
+      <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-12 lg:grid-cols-[1.1fr_1.4fr] lg:gap-16">
+        {/* IZQUIERDA — LOGO + TAGLINE + DISCLAIMER */}
+        <div className="flex flex-col gap-10">
+          <Link to="/" className="w-fit">
+            <img src="/logo-stix.svg" alt="Stix" className="h-6 w-auto" />
+          </Link>
 
-            <p className="max-w-xs text-xs leading-relaxed text-white uppercase">
-              No suplementa dietas insuficientes. Consulte con su médico y/o
-              farmacéutico.
-            </p>
+          <p className="text-lg lg:text-3xl leading-[1.05] tracking-tight">
+            Un producto para
+            <br />
+            cada momento del día.
+          </p>
+
+          <p className="w-fit max-w-full rounded-full border border-white/30 px-6 py-4 text-sm text-white/80">
+            Suplementa dietas insuficientes. Consulte a su médico y/o
+            farmacéutico.
+          </p>
+        </div>
+
+        {/* DERECHA — COLUMNAS DE LINKS + REDES */}
+        <div className="flex flex-col justify-between gap-12">
+          <div className="grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-4">
+            {columns.map((col) => (
+              <nav key={col.title} className="flex flex-col gap-5">
+                <h3 className="font-mono text-sm uppercase tracking-[0.2em] text-white/60">
+                  {col.title}
+                </h3>
+
+                <ul className="flex flex-col gap-4">
+                  {col.links.map((link) => (
+                    <li key={link.to}>
+                      <Link
+                        to={link.to}
+                        className="text-sm leading-snug transition-opacity hover:opacity-70"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            ))}
           </div>
 
-          {/* COLUMNA 2 */}
-          <nav className="flex flex-col gap-4">
-            <Link
-              to="/empresas"
-              className="w-fit text-sm font-medium uppercase transition-opacity hover:opacity-70"
-            >
-              Empresas
-            </Link>
-
-            <Link
-              to="/subscription"
-              className="w-fit text-sm font-medium  uppercase transition-opacity hover:opacity-70"
-            >
-              Suscripción
-            </Link>
-          </nav>
-
-          {/* COLUMNA 3 */}
-          <nav className="flex flex-col gap-4">
-            <Link
-              to="/faqs"
-              className="w-fit text-sm font-medium uppercase transition-opacity hover:opacity-70"
-            >
-              Preguntas frecuentes
-            </Link>
-
-            <Link
-              to="/contacto"
-              className="w-fit text-sm font-medium uppercase transition-opacity hover:opacity-70"
-            >
-              Contacto
-            </Link>
-          </nav>
-
-          {/* COLUMNA 4 — REDES */}
-          <div className="flex items-start gap-2 lg:justify-end">
+          <div className="flex justify-end items-center gap-3">
             <a
               href="#"
               aria-label="Instagram"
-              className="flex h-10 w-10 items-center justify-center rounded-full"
+              className="flex h-14 w-14 items-center justify-center rounded-full border border-white/30 transition-colors hover:bg-white/10"
             >
-              <img
-                src="https://s.magecdn.com/social/mw-instagram.svg"
-                alt="Instagram"
-                className="h-4 w-4"
-              />
+              <InstagramIcon />
             </a>
 
             <a
               href="#"
-              aria-label="LinkedIn"
-              className="flex h-10 w-10 items-center justify-center rounded-full"
+              aria-label="WhatsApp"
+              className="flex h-14 w-14 items-center justify-center rounded-full border border-white/30 transition-colors hover:bg-white/10"
             >
-              <img
-                src="https://s.magecdn.com/social/mw-linkedin.svg"
-                alt="LinkedIn"
-                className="h-4 w-4"
-              />
-            </a>
-
-            <a
-              href="#"
-              aria-label="Facebook"
-              className="flex h-10 w-10 items-center justify-center rounded-full "
-            >
-              <img
-                src="https://s.magecdn.com/social/mw-facebook.svg"
-                alt="Facebook"
-                className="h-4 w-4"
-              />
+              <WhatsappIcon />
             </a>
           </div>
         </div>
-        <div className="border-t border-white/15">
-          <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-4 px-6 py-6 text-xs text-white/60 md:grid-cols-2 lg:grid-cols-4 lg:px-0">
-            <p>
-              © {new Date().getFullYear()} Stix. Todos los derechos reservados.
-            </p>
-
-            <Link
-              to="/terminos-y-condiciones"
-              className="transition-colors hover:text-white"
-            >
-              Términos y condiciones
-            </Link>
-
-            <Link
-              to="/politica-de-privacidad"
-              className="transition-colors hover:text-white"
-            >
-              Política de privacidad
-            </Link>
-
-            <Link
-              to="/politica-de-cookies"
-              className="transition-colors hover:text-white"
-            >
-              Política de cookies
-            </Link>
-          </div>
-        </div>
-      </footer>
-    </>
+      </div>
+    </footer>
   );
 }

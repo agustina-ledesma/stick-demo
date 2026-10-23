@@ -32,7 +32,7 @@ export default function CartButton({ onCartClick }) {
   }, []);
 
   return (
-    <div className="flex h-12 w-fit items-center gap-4 rounded-full border border-white/10 bg-black/40 p-2 backdrop-blur-xl">
+    <div className="flex h-10 w-fit items-center gap-4 rounded-full border border-white/10 bg-black/30 p-2 backdrop-blur-xl">
 
       {/* Usuario */}
       <button

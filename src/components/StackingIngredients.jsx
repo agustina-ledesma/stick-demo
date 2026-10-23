@@ -1,6 +1,8 @@
-
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import SectionLabel from "./SectionLabel";
+import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 const defaultIngredients = [
   {
@@ -82,7 +84,7 @@ function IngredientCard({ ingredient, index, total }) {
   const scale = useTransform(
     scrollYProgress,
     [0, 1],
-    [1, 1 - (total - index - 1) * 0.025]
+    [1, 1 - (total - index - 1) * 0.025],
   );
 
   const styles = colorStyles[ingredient.color] || colorStyles.white;
@@ -136,16 +138,16 @@ export default function StackingIngredients({
   const visibleIngredients = ingredients.slice(0, 12);
   const total = visibleIngredients.length;
 
+  const [isWarningOpen, setIsWarningOpen] = useState(false);
+
   return (
     <section className="h-fit py-12 lg:py-20 bg-white">
       <div className="mx-auto grid max-w-[1600px] grid-cols-1 lg:grid-cols-2 lg:items-start">
-
         {/* CONTENIDO */}
-        <div className="px-5 py-10 sm:px-8 sm:py-12 md:py-8 lg:sticky lg:top-12 lg:self-start lg:px-16 lg:py-12">
+        {/*  <div className="px-5 py-10 sm:px-8 sm:py-12 md:py-8 lg:sticky lg:top-12 lg:self-start lg:px-16 lg:py-12">
+           <SectionLabel text="Ingredientes" className="py-3" />
           <div className="flex flex-col gap-2">
-            <span className="py-2 text-xs font-medium uppercase tracking-widest text-gray-500 md:py-1 lg:py-4">
-              INGREDIENTES
-            </span>
+            
 
             <h2 className="max-w-2xl text-4xl font-medium leading-[1.05] tracking-tight md:text-3xl lg:text-4xl">
               Tomalo antes de que lo necesites
@@ -157,9 +159,9 @@ export default function StackingIngredients({
               tomarlo cerca de la noche.
             </p>
 
-            <div className="my-3 flex flex-col gap-3 rounded-lg border border-gray-100 bg-neutral-50 p-4 sm:p-6 md:my-2 md:gap-3 md:p-4 lg:my-4 lg:gap-4 lg:p-8">
+            <div className="my-3 flex flex-col gap-3 rounded-lg border border-gray-100 p-4 sm:p-6 md:my-2 md:gap-3 md:p-4 lg:my-4 lg:gap-4 lg:p-8">
               <div className="flex items-center justify-between gap-3">
-                <h3 className="text-sm font-semibold uppercase md:text-xs lg:text-base">
+                <h3 className="text-sm font-semibold text-gray-600 uppercase md:text-xs lg:text-base">
                   Antes de tomarlo
                 </h3>
 
@@ -174,6 +176,59 @@ export default function StackingIngredients({
                 Si tenés una condición de salud, tomás medicación o tenés
                 dudas, consultá con un profesional.
               </p>
+            </div>
+          </div>
+        </div> */}
+        <div className="px-5 py-10 sm:px-8 sm:py-12 md:py-8 lg:sticky lg:top-12 lg:self-start lg:px-16 lg:py-12">
+          <SectionLabel text="Ingredientes" className="pt-0 pb-4" />
+
+          <div className="flex flex-col gap-0">
+            <h2 className="max-w-2xl text-4xl font-medium leading-[1.05] tracking-tight md:text-3xl lg:text-4xl">
+              Tomalo antes de que lo necesites
+            </h2>
+
+            <p className="mt-2 max-w-xl text-md leading-relaxed text-gray-600 md:mt-2 lg:mt-3 lg:text-lg">
+              Tomalo por la mañana, a media mañana o entre 40 y 60 minutos antes
+              de una tarea exigente. Como contiene cafeína, evitá tomarlo cerca
+              de la noche.
+            </p>
+
+            <div className="my-4 rounded-lg border border-gray-100">
+              <button
+                type="button"
+                onClick={() => setIsWarningOpen((prev) => !prev)}
+                aria-expanded={isWarningOpen}
+                className="flex w-full items-center justify-between gap-3 p-4 text-left sm:p-5"
+              >
+                <div className="flex w-full justify-between gap-2">
+                  <span className="text-sm uppercase text-gray-600">
+                    Antes de tomarlo
+                  </span>
+                  <span className="shrink-0 rounded-full bg-[#F5DEDC] w-fit h-fit font-semibold uppercase px-3 py-1 text-xs  text-[#8B0012]">
+                    Advertencia
+                  </span>
+                </div>
+
+                <span className="flex shrink-0 items-center gap-3">
+                  <ChevronDown
+                    size={18}
+                    className={`text-gray-500 transition-transform duration-200 ${
+                      isWarningOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </span>
+              </button>
+
+              {isWarningOpen && (
+                <div className="px-4 pb-4 sm:px-5 sm:pb-5">
+                  <p className="text-sm leading-relaxed text-gray-600">
+                    Solo para mayores de 18 años. No se recomienda durante el
+                    embarazo ni antes de una cirugía. SHARP contiene cafeína. Si
+                    tenés una condición de salud, tomás medicación o tenés
+                    dudas, consultá con un profesional.
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -191,7 +246,6 @@ export default function StackingIngredients({
             ))}
           </div>
         </div>
-
       </div>
     </section>
   );

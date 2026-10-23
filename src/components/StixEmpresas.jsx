@@ -7,7 +7,7 @@ export default function StixEmpresas({
   const navigate = useNavigate();
 
   return (
-    <section className="relative overflow-hidden  px-6 py-20 text-white md:px-10 md:py-24 lg:min-h-[750px] lg:px-20 lg:py-28">
+    <section className="relative overflow-hidden  px-6 py-20  text-gray-500 md:px-10 md:py-24 lg:min-h-[750px] lg:px-20 lg:py-28">
       <div className="mx-auto grid max-w-7xl items-center gap-14 md:gap-16 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
         {/* TEXTO */}
         <div className="max-w-md">
@@ -19,7 +19,7 @@ export default function StixEmpresas({
             Llevá Stix a tu equipo
           </h2>
 
-          <p className="mt-4 text-base leading-relaxed text-white/70">
+          <p className="mt-4 text-base leading-relaxed">
             Si buscás una propuesta de bienestar para tu empresa, equipo o
             evento, podemos ayudarte a armar una opción con los productos de
             Stix.
@@ -28,7 +28,7 @@ export default function StixEmpresas({
           <button
             type="button"
             onClick={() => navigate("/empresas")}
-            className="mt-8 inline-flex h-12 items-center rounded-full bg-[#7a0010] px-6 text-sm font-semibold uppercase"
+            className="mt-8 inline-flex h-12 items-center rounded-full bg-[#7a0010] px-6 text-sm text-white font-semibold uppercase"
           >
             Conocé la propuesta
           </button>

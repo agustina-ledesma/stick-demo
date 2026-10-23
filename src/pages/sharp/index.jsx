@@ -5,30 +5,17 @@ import MomentosNav from "../../components/momentosNav";
 import ProductPurchaseOptions from "../../components/ProductPurchaseOptions";
 import ProductFAQs from "../../components/FaqsProductos";
 import StackingIngredients from "../../components/StackingIngredients";
+import StixSharp3D from "../../components/product/StixSharp3D";
+import { Sun, Droplet, Moon } from "lucide-react";
+import GlassPill from "../../components/GlassPill";
+import SectionLabel from "../../components/SectionLabel";
+import ProductCards from "../../components/ProductCards";
+import VideoGrid from "../../components/VideoGrid";
+import { ReactLenis } from "lenis/react";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
 export default function Sharp() {
-  const steps = [
-    {
-      number: "01",
-      title: "Agua",
-      description: "Poné agua en un vaso para preparar tu SHARP.",
-      video: "/videos/video-1.mp4",
-    },
-    {
-      number: "02",
-      title: "SHARP",
-      description:
-        "Agregá el contenido del sobre al agua y mezclá hasta disolver.",
-      video: "/videos/video-2.mp4",
-    },
-    {
-      number: "03",
-      title: "Foco",
-      description: "Ya estás preparado para encarar tu próxima tarea.",
-      video: "/videos/video-3.mp4",
-    },
-  ];
-
   const containerRef = useRef(null);
   const [isDesktop, setIsDesktop] = useState(false);
 
@@ -97,8 +84,20 @@ export default function Sharp() {
             {/* Área del producto: ocupa una pantalla completa */}
 
             {/* Área del producto */}
-            <div className="relative h-[100svh] min-h-[100svh] w-full shrink-0 overflow-hidden touch-pan-y bg-[linear-gradient(90deg,rgba(20,20,20,1)_0%,rgba(114,0,14,1)_100%)] flex items-center">
-              <StixSharp3d style={{ height: "80%", touchAction: "pan-y" }} />
+            <div className="relative flex h-[100svh] min-h-[100svh] w-full shrink-0 flex-col overflow-hidden touch-pan-y bg-[linear-gradient(90deg,rgba(20,20,20,1)_0%,rgba(114,0,14,1)_100%)]">
+              {/* Producto 3D centrado */}
+              <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
+                <StixSharp3d style={{ height: "80%", touchAction: "pan-y" }} />
+              </div>
+
+              {/* Pill siempre abajo */}
+              <div className="relative z-20 mt-auto p-6">
+                <GlassPill
+                  icon={Sun}
+                  text="Foco sostenido por las mañanas"
+                  defaultOpen={true}
+                />
+              </div>
             </div>
 
             {/* Contenido: mínimo una pantalla, puede crecer */}
@@ -111,120 +110,55 @@ export default function Sharp() {
                   foco sostenido por las mañanas
                 </span>
                 <p className="w-full text-md leading-relaxed">
-                  Hay días en que tenés tiempo, pero no conseguís sentarte a
-                  hacer una sola cosa. SHARP acompaña la atención y la energía
-                  mental cuando necesitás concentrarte: a la mañana, a media
-                  mañana o antes de una tarea exigente.
+                  Hay días en que cuesta concentrarse. SHARP acompaña tu
+                  atención y energía mental cuando necesitás enfocarte, desde la
+                  mañana hasta antes de una tarea exigente.
                 </p>
                 <span className="text-2xl font-semibold">$00.00</span>
               </div>
-              <ProductFAQs />
 
               <ProductPurchaseOptions />
             </div>
           </section>
         </div>
+        <div className="relative hidden h-screen w-full overflow-hidden bg-[linear-gradient(90deg,rgba(20,20,20,1)_0%,rgba(114,0,14,1)_100%)] lg:block">
+          {/* Producto 3D siempre centrado */}
+          <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
+            <StixSharp3D />
+          </div>
 
-        {/* ================================================== */}
-        {/* DESKTOP: TRANSICIÓN ORIGINAL */}
-        {/* ================================================== */}
-        <div ref={containerRef} className="relative hidden h-[400vh] lg:block">
-          <div className="sticky top-0 h-screen overflow-hidden bg-[linear-gradient(90deg,rgba(20,20,20,1)_0%,rgba(114,0,14,1)_100%)]">
-            {/* HERO */}
-            <motion.section
-              style={{ opacity: heroOpacity }}
-              className="absolute inset-0 z-10 flex flex-col overflow-hidden px-12 py-12 text-white lg:grid lg:grid-cols-2 lg:items-end lg:gap-8"
-            >
-              {/* Texto principal */}
-              <div className="pointer-events-auto relative z-10 mt-auto flex flex-col gap-4 lg:col-start-1 lg:row-start-1">
-                <div className="flex flex-col gap-3">
-                  <span className="text-xs font-medium uppercase tracking-widest text-gray-200">
-                    FOCO SOSTENIDO POR LAS MAÑANAS
-                  </span>
-
+          {/* Columnas alineadas desde arriba */}
+          <div className="absolute inset-x-0 bottom-0 z-20 grid grid-cols-2 items-stretch pb-6">
+            {/* Columna 1 */}
+            <div className="flex min-h-[280px] h-full flex-col  p-10 pb-6 text-white">
+              <div className="flex h-full max-w-sm flex-col">
+                <div className="mt-auto flex flex-col gap-3 ">
                   <h1 className="font-bristone text-6xl font-semibold uppercase tracking-tight">
                     SHARP
                   </h1>
 
                   <p className="max-w-md text-lg leading-relaxed">
-                    Hay días en que tenés tiempo, pero no conseguís sentarte a
-                    hacer una sola cosa.
+                    SHARP acompaña tu atención y energía mental cuando necesitás
+                    enfocarte, desde la mañana hasta antes de una tarea
+                    exigente.
                   </p>
                 </div>
 
-                <div className="flex w-fit items-center gap-2">
-                  <button
-                    type="button"
-                    className="rounded-full bg-[#72000E] px-8 py-4 text-sm font-semibold uppercase text-white "
-                  >
-                    descubrí sharp
-                  </button>
-
-                  {/*  <button
-                  type="button"
-                  className="rounded-full border border-white px-6 py-4 text-sm font-semibold uppercase"
-                >
-                  Ver suscripción
-                </button> */}
-                </div>
-              </div>
-              <div className="pointer-events-auto relative z-[60] flex items-center justify-end">
-                <MomentosNav />
-              </div>
-            </motion.section>
-
-            {/* FÓRMULA */}
-            <motion.section
-              style={{ opacity: formulaOpacity }}
-              className="pointer-events-none  absolute inset-0 z-20 grid grid-cols-2 grid-rows-1 overflow-hidden bg-white text-gray-600"
-            >
-              {/* Columna del producto */}
-              <div className="relative flex min-h-0 items-center justify-center overflow-hidden">
-                <motion.div
-                  style={{ width: panelWidth }}
-                  className="absolute inset-y-0 left-0 bg-[linear-gradient(90deg,rgba(20,20,20,1)_0%,rgba(114,0,14,1)_100%)]"
+                <GlassPill
+                  icon={Sun}
+                  text="Foco sostenido por las mañanas"
+                  className="mt-6"
+                  defaultOpen={true}
                 />
               </div>
+            </div>
 
-              {/* Columna de información */}
-              <motion.div
-                style={{ opacity: contentOpacity, y: contentY }}
-                className="pointer-events-auto relative min-h-screen z-10 flex flex-col justify-center items-center gap-4 p-8 mt-4"
-              >
-                <div className="flex flex-col gap-2">
-                  <h1 className="font-bristone text-6xl uppercase text-[#72000E]">
-                    SHARP
-                  </h1>
-                  <span className="text-sm font-semibold uppercase tracking-widest py-2">
-                    foco sostenido por las mañanas
-                  </span>
-                  <p className="w-full text-md leading-relaxed">
-                    Hay días en que tenés tiempo, pero no conseguís sentarte a
-                    hacer una sola cosa. SHARP acompaña la atención y la energía
-                    mental cuando necesitás concentrarte: a la mañana, a media
-                    mañana o antes de una tarea exigente.
-                  </p>
-                  <span className="text-2xl font-semibold">$00.00</span>
-                </div>
-                <ProductFAQs />
-
+            {/* Columna 2 */}
+            <div className="flex min-h-[280px] w-full justify-end px-4 text-white">
+              <div className="my-3 w-full max-w-[450px] rounded-2xl bg-white px-6 py-4">
                 <ProductPurchaseOptions />
-              </motion.div>
-            </motion.section>
-
-            {/* Modelo 3D: transición original en desktop */}
-            <motion.div
-              style={{
-                x: modelX,
-                y: modelY,
-                scale: modelScale,
-              }}
-              className="pointer-events-none absolute inset-0 z-30 flex items-center justify-center overflow-hidden"
-            >
-              <div className="h-full w-[min(46vw,900px)]">
-                <StixSharp3d style={{ height: "100%" }} />
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </main>
@@ -233,62 +167,72 @@ export default function Sharp() {
         <section className="">
           <StackingIngredients />
         </section>
-
-        <section className="h-fit bg-white flex justify-center">
-          <div className="mx-auto max-w-[1400px] p-8">
-            <div className="mb-10 flex flex-col gap-3 sm:mb-14">
-              <span className="text-xs font-medium uppercase tracking-widest text-gray-500">
-                CÓMO PREPARARLO
-              </span>
-
-              <h2 className="mt-3 text-4xl font-medium leading-tight tracking-tight text-black">
-                Tres pasos. Un momento para vos.
-              </h2>
-              <p className="text-lg text-gray-600">
-                SHARP está pensado para acompañarte cuando necesitás
-                concentrarte, empezar el día con claridad o encarar una tarea
-                exigente.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-3 md:gap-4 lg:gap-6">
-              {steps.map((step) => (
-                <article
-                  key={step.number}
-                  className="mx-auto w-full min-w-0 max-w-[420px] p-2 md:max-w-none md:p-0"
-                >
-                  <div className="aspect-[4/5] w-full overflow-hidden rounded-lg bg-gray-100">
-                    <video
-                      className="h-full w-full object-cover"
-                      src={step.video}
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      preload="metadata"
-                      aria-label={`${step.title}: paso ${step.number}`}
-                    />
-                  </div>
-
-                  <div className="mt-4 lg:mt-5">
-                    <span className="text-xs font-medium uppercase tracking-wider text-gray-500">
-                      Paso {Number(step.number)}
-                    </span>
-
-                    <h3 className="mt-2 text-xl font-medium tracking-tight text-black lg:text-2xl uppercase">
-                      {step.title}
-                    </h3>
-
-                    <p className="mt-2 text-sm leading-relaxed text-gray-600 lg:text-base">
-                      {step.description}
-                    </p>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
+        <VideoGrid />
       </div>
+
+      <ReactLenis root>
+        <main className="bg-black">
+          <div className="wrapper">
+            {/*  <section className="relative sticky top-0 flex min-h-screen w-full items-center justify-center bg-white py-8 text-white">
+              <div className="w-full px-8">
+                <div className="mb-8 flex flex-col gap-3 lg:mb-10">
+                  <SectionLabel text="Completá tu día" />
+
+                  <h2 className="mt-1 max-w-3xl text-2xl lg:text-4xl leading-tight tracking-tight text-black">
+                    Sumá otra fórmula y el ahorro se aplica solo.
+                  </h2>
+                </div>
+
+                <ProductCards />
+              </div>
+            </section> */}
+            <section className="relative sticky top-0 flex min-h-screen w-full items-start bg-white py-8 text-white lg:py-12">
+              <div className="flex w-full flex-col gap-8 px-6 md:px-8 lg:flex-row lg:items-start lg:justify-between lg:gap-12 lg:px-10">
+                <div className="flex flex-col gap-3 lg:w-[35%] lg:shrink-0">
+                  <SectionLabel text="Completá tu día" />
+
+                  <h2 className="mt-1 max-w-3xl text-2xl leading-tight tracking-tight text-black lg:text-4xl">
+                    Sumá otra fórmula y el ahorro se aplica solo.
+                  </h2>
+                </div>
+
+                <div className="w-full min-w-0 lg:flex-1">
+                  <ProductCards />
+                </div>
+              </div>
+            </section>
+
+            <section
+              className="sticky top-0 flex h-screen w-full overflow-hidden rounded-t-2xl bg-[#f4f3f2] p-3 text-black sm:p-4 md:p-5 lg:p-6"
+              style={{
+                backgroundImage: "url('/images/faqs/bg-faqs.png')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <section className="grid w-full flex-1 grid-cols-1 content-startcle gap-4 overflow-y-auto px-5 py-6 sm:gap-5 sm:px-6 sm:py-8 lg:grid-cols-2 lg:items-start lg:gap-12 lg:px-10 lg:py-10">
+                {/* Columna 1 */}
+                <div className="flex h-fit flex-col items-start gap-2">
+                  <SectionLabel text="Faqs" />
+                  <h2 className="text-2xl lg:text-4xl">Preguntas frecuentes</h2>
+                  <Link
+                    to="/faqs"
+                    className="inline-flex items-center gap-2 underline underline-offset-4 transition-opacity hover:opacity-70"
+                  >
+                    Ver todas las preguntas frecuentes
+                    <ArrowRight size={16} />
+                  </Link>
+                </div>
+
+                {/* Columna 2 */}
+                <div className="min-w-0">
+                  <ProductFAQs />
+                </div>
+              </section>
+            </section>
+          </div>
+        </main>
+      </ReactLenis>
     </>
   );
 }

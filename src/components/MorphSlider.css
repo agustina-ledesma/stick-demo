@@ -1,0 +1,304 @@
+.morph-slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #0c0c0e;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.morph-slider-stage {
+  position: absolute;
+  inset: 0;
+  cursor: grab;
+  outline: none;
+}
+
+.morph-slider-stage:active {
+  cursor: grabbing;
+}
+
+.morph-slider-stage:focus-visible {
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.7);
+}
+
+.morph-slider-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.morph-slider-caption {
+  position: absolute;
+  left: 22px;
+  bottom: 22px;
+  z-index: 2;
+  max-width: 70%;
+  pointer-events: none;
+  display: grid;
+}
+
+.morph-slider-caption-text {
+  grid-area: 1 / 1;
+  justify-self: start;
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #fff;
+  background: rgba(10, 10, 12, 0.42);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  opacity: 0;
+  transform: translateY(12px);
+  filter: blur(6px);
+  transition:
+    opacity var(--ms-swap) cubic-bezier(0.16, 1, 0.3, 1),
+    transform var(--ms-swap) cubic-bezier(0.16, 1, 0.3, 1),
+    filter var(--ms-swap) cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.morph-slider-caption-text.is-active {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.morph-slider-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.morph-slider-btn {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 50%;
+  color: #fff;
+  background: rgba(12, 12, 14, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  cursor: pointer;
+  transition:
+    transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.morph-slider-btn:hover {
+  background: rgba(24, 24, 28, 0.6);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.06);
+}
+
+.morph-slider-btn:active {
+  transform: scale(0.96);
+}
+
+.morph-slider-btn:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.8);
+  outline-offset: 2px;
+}
+
+.morph-slider-indicators {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 18px;
+  z-index: 3;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.morph-slider-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  transition:
+    width var(--ms-dot) cubic-bezier(0.16, 1, 0.3, 1),
+    background var(--ms-dot) ease;
+}
+
+.morph-slider-dot.is-active {
+  width: 22px;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.morph-slider-dot:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.8);
+  outline-offset: 2px;
+}
+
+@media (max-width: 420px) {
+  .morph-slider-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .morph-slider-caption-text {
+    font-size: 13px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .morph-slider-caption-text,
+  .morph-slider-btn,
+  .morph-slider-dot {
+    animation: none;
+    transition: none;
+  }
+}
+
+
+/* Render 3D */
+.morph-slider-render {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  pointer-events: none;
+  animation: morph-content-enter var(--ms-swap)
+    cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.morph-slider-render > * {
+  pointer-events: none;
+  max-width: 100%;
+}
+
+/* Contenido */
+.morph-slider-content {
+  position: absolute;
+  left: 24px;
+  bottom: 58px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: min(460px, calc(100% - 48px));
+  color: #fff;
+  pointer-events: none;
+  animation: morph-content-enter var(--ms-swap)
+    cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.morph-slider-title {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(32px, 5vw, 64px);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.morph-slider-description {
+  margin: 0;
+  max-width: 380px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.morph-slider-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 22px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 999px;
+  background: #fff;
+  color: #111;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  pointer-events: auto;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.morph-slider-cta:hover {
+  background: transparent;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.morph-slider-cta:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+@keyframes morph-content-enter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+    filter: blur(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .morph-slider-render {
+    padding: 12px;
+  }
+
+  .morph-slider-content {
+    left: 18px;
+    bottom: 52px;
+    max-width: calc(100% - 36px);
+    gap: 9px;
+  }
+
+  .morph-slider-title {
+    font-size: clamp(30px, 9vw, 46px);
+  }
+
+  .morph-slider-description {
+    font-size: 13px;
+  }
+
+  .morph-slider-cta {
+    min-height: 40px;
+    padding: 0 18px;
+    font-size: 13px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .morph-slider-render,
+  .morph-slider-content {
+    animation: none;
+  }
+}
