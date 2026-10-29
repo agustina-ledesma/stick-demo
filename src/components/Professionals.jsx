@@ -11,19 +11,19 @@ const professionals = [
     name: "Lucía Ferraro",
     role: "Nutricionista",
     quote: "Stix simplifica la incorporación de nutrientes según cada momento.",
-    photo: "XuB10o8080c",
+    photo: null,
   },
   {
     name: "Martín Bianchi",
     role: "Medicina deportiva",
     quote: "Stix acompaña el rendimiento y la recuperación.",
-    photo: "JJEOuvnY1Tw",
+    photo: null,
   },
   {
     name: "Sofía Mendizábal",
     role: "Bioquímica",
     quote: "Stix combina ingredientes pensados para necesidades concretas.",
-    photo: "VAvkPtF4HJI",
+    photo: null,
   },
   {
     name: "Valentina Roldán",
@@ -174,7 +174,7 @@ export default function Professionals() {
             onClick={() => scrollCarousel(-1)}
             disabled={!canScrollLeft}
             aria-label="Ver profesionales anteriores"
-            className="flex h-11 w-11 items-center justify-center rounded-full bg-gray-400 text-white transition-opacity hover:bg-[#262626] disabled:cursor-not-allowed disabled:opacity-30"
+            className="flex h-11 w-11 items-center justify-center rounded-full bg-[#fbfbfb] text-gray-600 transition-opacity hover:bg-[#262626] disabled:cursor-not-allowed disabled:opacity-30"
           >
             <ArrowLeft size={20} strokeWidth={2} />
           </button>
@@ -184,7 +184,7 @@ export default function Professionals() {
             onClick={() => scrollCarousel(1)}
             disabled={!canScrollRight}
             aria-label="Ver siguientes profesionales"
-            className="flex h-11 w-11 items-center justify-center rounded-full bg-gray-400 text-white transition-opacity hover:bg-[#262626] disabled:cursor-not-allowed disabled:opacity-30"
+            className="flex h-11 w-11 items-center justify-center rounded-full bg-[#fbfbfb] text-gray-600 transition-opacity hover:bg-[#262626] disabled:cursor-not-allowed disabled:opacity-30"
           >
             <ArrowRight size={20} strokeWidth={2} />
           </button>

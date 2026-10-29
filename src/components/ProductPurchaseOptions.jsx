@@ -107,8 +107,8 @@ export default function ProductPurchaseOptions() {
                     Suscripción
                   </span>
 
-                  <span className="rounded-full bg-[#F89437] px-2 lg:px-2.5 py-1 text-[9px] lg:text-[10px] font-semibold uppercase leading-none text-white sm:text-xs">
-                    Ahorrá un 20 %
+                  <span className="rounded-full bg-[#F5DEDC] text-[#8B0012] px-2 lg:px-2.5 py-1 text-[9px] lg:text-[10px] font-semibold uppercase leading-none sm:text-xs">
+                    Ahorrá un 15 %
                   </span>
                 </div>
 

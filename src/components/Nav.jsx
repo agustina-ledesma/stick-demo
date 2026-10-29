@@ -13,6 +13,7 @@ import CartSidebar from "./CartSidebar";
 const navItems = [
   { label: "Ciencia", href: "/ciencia" },
   { label: "Empresas", href: "/empresas" },
+  { label: "Vender Stix", href: "/vender" },
   { label: "Es para vos", href: "/es-para-vos" },
   { label: "Contacto", href: "/contacto" },
 ];

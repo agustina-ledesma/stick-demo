@@ -1,49 +1,9 @@
-
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import StixSharp3D from "./product/StixSharp3D";
 import GlassPill from "./GlassPill";
-import {
-  Sun,
-  Droplet,
-  Moon,
-  ArrowLeft,
-  ArrowRight,
-  Zap
-} from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
-const products = [
-/*   {
-    id: "hydrate",
-    icon: Droplet,
-    label: "MEDIODÍA",
-    title: "HYDRATE",
-    subtitle: "Hidratación efectiva",
-    path: "#",
-    Render3D: StixSharp3D,
-  }, */
-  {
-    id: "reset",
-    icon: Moon,
-    label: "NOCHE",
-    title: "RESET",
-    subtitle: "Descanso reparador",
-    path: "#",
-    Render3D: StixSharp3D,
-  },
-  {
-    id: "system",
-    icon: Zap,
-    label: "combinación",
-    title: "system",
-    subtitle: "El día completo",
-    discount: "Ahorrás 25 %",
-    path: "#",
-    Render3D: StixSharp3D,
-  },
-];
-
-export default function ProductCards() {
+export default function ProductCards({ products = [] }) {
   const navigate = useNavigate();
   const sliderRef = useRef(null);
 
@@ -74,13 +34,10 @@ export default function ProductCards() {
             return (
               <article
                 key={product.id}
-                className="flex min-w-0 max-w-[300px] h-fit flex-[0_0_100%] snap-center flex-col rounded-2xl bg-[linear-gradient(90deg,rgba(20,20,20,1)_0%,rgba(114,0,14,1)_100%)] p-4"
+                className="flex h-fit min-w-0 max-w-[300px] flex-[0_0_100%] snap-center flex-col rounded-2xl bg-[linear-gradient(90deg,rgba(20,20,20,1)_0%,rgba(114,0,14,1)_100%)] p-4"
               >
                 <div className="flex shrink-0 items-center justify-between gap-2">
-                  <GlassPill
-                    icon={product.icon}
-                    text={product.label}
-                  />
+                  <GlassPill icon={product.icon} text={product.label} />
 
                   {product.discount && (
                     <span className="shrink-0 rounded-full bg-[#F5DEDC] px-3 py-1 text-xs font-medium text-[#8B0012]">
@@ -89,7 +46,6 @@ export default function ProductCards() {
                   )}
                 </div>
 
-                {/* Render 3D compacto en mobile */}
                 <div className="my-1 h-[min(44vh,280px)] w-full shrink-0">
                   <ProductRender
                     style={{
@@ -113,43 +69,42 @@ export default function ProductCards() {
           })}
         </div>
 
-        {/* Flechas debajo de las cards */}
-        <div className="mt-3 flex justify-center gap-3">
-          <button
-            type="button"
-            onClick={() => scrollCards(-1)}
-            aria-label="Producto anterior"
-            className="flex h-10 w-10 items-center justify-center rounded-full bg-black text-white transition-colors hover:bg-[#72000E]"
-          >
-            <ArrowLeft size={18} />
-          </button>
+        {/* FLECHAS */}
+        {products.length > 1 && (
+          <div className="mt-3 flex justify-center gap-3">
+            <button
+              type="button"
+              onClick={() => scrollCards(-1)}
+              aria-label="Producto anterior"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-black text-white transition-colors hover:bg-[#72000E]"
+            >
+              <ArrowLeft size={18} />
+            </button>
 
-          <button
-            type="button"
-            onClick={() => scrollCards(1)}
-            aria-label="Producto siguiente"
-            className="flex h-10 w-10 items-center justify-center rounded-full bg-black text-white transition-colors hover:bg-[#72000E]"
-          >
-            <ArrowRight size={18} />
-          </button>
-        </div>
+            <button
+              type="button"
+              onClick={() => scrollCards(1)}
+              aria-label="Producto siguiente"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-black text-white transition-colors hover:bg-[#72000E]"
+            >
+              <ArrowRight size={18} />
+            </button>
+          </div>
+        )}
       </div>
 
-      {/* DESKTOP: estilos originales */}
-      <div className="hidden w-full lg:grid-cols-2 mx-auto justify-items-center gap-5 lg:grid lg:gap-6">
+      {/* DESKTOP */}
+      <div className="mx-auto hidden w-full max-w-7xl justify-items-center gap-5  lg:flex lg:gap-8">
         {products.map((product) => {
           const ProductRender = product.Render3D;
 
           return (
             <article
               key={product.id}
-              className="flex w-full max-w-[390px] mx-auto h-fit flex-col rounded-2xl bg-[linear-gradient(90deg,rgba(20,20,20,1)_0%,rgba(114,0,14,1)_100%)] p-5 lg:p-6"
+              className="mx-auto flex h-fit w-full max-w-[390px] flex-col rounded-2xl bg-[linear-gradient(90deg,rgba(20,20,20,1)_0%,rgba(114,0,14,1)_100%)] p-5 lg:p-6"
             >
               <div className="flex shrink-0 items-center justify-between gap-2">
-                <GlassPill
-                  icon={product.icon}
-                  text={product.label}
-                />
+                <GlassPill icon={product.icon} text={product.label} />
 
                 {product.discount && (
                   <span className="shrink-0 rounded-full bg-[#F5DEDC] px-3 py-1 text-xs font-medium text-[#8B0012]">
@@ -171,7 +126,7 @@ export default function ProductCards() {
                 <button
                   type="button"
                   onClick={() => navigate(product.path)}
-                  className="w-full rounded-full bg-[#72000E] uppercase px-4 py-3 font-bristone text-sm font-medium text-white transition-colors hover:bg-[#5E0010] lg:px-6 lg:py-3 lg:text-base"
+                  className="w-full rounded-full bg-[#72000E] px-4 py-3 font-bristone text-sm font-medium uppercase text-white transition-colors hover:bg-[#5E0010] lg:px-6 lg:py-3 lg:text-base"
                 >
                   VER {product.title}
                 </button>

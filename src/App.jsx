@@ -7,9 +7,10 @@ import Footer from "./components/Footer";
 import Empresas from "./pages/empresas";
 import EsParaVos from "./pages/es-para-vos";
 import Contacto from "./pages/contacto";
-import Faqs from "./pages/faqs";
-import Suscription from "./pages/suscription";
+import Faqs from "./pages/Faqs";
+import Suscription from "./pages/suscripcion";
 import Sharp from "./pages/sharp/index";
+import VenderStix from "./pages/vender-stix";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/ciencia" element={<Ciencia />} />
         <Route path="/empresas" element={<Empresas />} />
+        <Route path="/vender" element={<VenderStix />} />
         <Route path="/es-para-vos" element={<EsParaVos />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/faqs" element={<Faqs />} />

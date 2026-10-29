@@ -1,28 +1,25 @@
 import { animate, motion, useMotionValue } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { ArrowRight } from "lucide-react";
+import { Sun, Moon } from "lucide-react";
+import GlassPill from "./GlassPill";
 
 const items = [
   {
     id: 1,
-    url: "/images/hero/hero-1.png",
-    title: "un protocolo para acompañar tu día completo",
-    button: "Descubrí oasis",
-    link: "/oasis",
+    url: "/images/home/hero-1.png",
+    title: "UN MOMENTO, UNA FÓRMULA",
+    description: null,
+    button: "Descubrí stix",
+    link: "/#products",
   },
   {
     id: 2,
-    url: "/images/hero/hero-2.png",
-    title: "Cuando el día te pide más de lo que podés darle",
-    button: "descubrí system",
-    link: "/system",
-  },
-  {
-    id: 3,
-    url: "/images/hero/hero-3.png",
-    title: "La fórmula completa, sin vueltas",
-    button: "ver formulas",
-    link: "/ciencia",
+    url: "/images/home/hero-2.jpg",
+    title: "PARA EQUIPOS QUE NO NEGOCIAN SU RENDIMIENTO.",
+    description:
+      "Formula funcional premium para las personas que invierten en productividad como su mayor activo.",
+    button: "stix empresas",
+    link: "/empresas",
   },
 ];
 
@@ -61,12 +58,12 @@ export default function Carousel() {
   }, [index, x, isDragging]);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h-screen w-full overflow-hidden bg-black">
       <div
         ref={containerRef}
-        className="relative h-full w-full overflow-hidden"
+        className="relative h-full w-full overflow-hidden bg-black"
       >
-        {/* Imágenes */}
+        {/* IMÁGENES */}
         <motion.div
           className="flex h-full"
           drag="x"
@@ -77,7 +74,6 @@ export default function Carousel() {
             setIsDragging(false);
 
             const containerWidth = containerRef.current?.offsetWidth || 1;
-
             const offset = info.offset.x;
             const velocity = info.velocity.x;
 
@@ -96,88 +92,97 @@ export default function Carousel() {
           style={{ x }}
         >
           {items.map((item) => (
-            <div key={item.id} className="relative h-screen w-full shrink-0">
-              <img
-                src={item.url}
-                alt={item.title}
-                className="h-full w-full select-none object-cover"
-                draggable={false}
-              />
+            <div
+              key={item.id}
+              className="relative h-screen w-full shrink-0 bg-black"
+            >
+              {item.url && (
+                <img
+                  src={item.url}
+                  alt={item.title}
+                  className="h-full w-full select-none object-cover"
+                  draggable={false}
+                  onError={(e) => {
+                    e.currentTarget.style.display = "none";
+                  }}
+                />
+              )}
             </div>
           ))}
         </motion.div>
 
-        {/* Contenido inferior */}
-        <div className="absolute inset-x-0 bottom-0 z-10 px-6 pb-16 md:px-10 lg:px-16">
-          <div className="grid gap-4 md:gap-8 md:grid-cols-2 md:items-end">
-            {/* Columna izquierda */}
-            <div className="flex flex-col items-start">
-              <motion.h1
-                key={currentItem.title}
-                initial={{ opacity: 0, y: 15 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3 }}
-                className="text-2xl lg:text-4xl uppercase font-semibold leading-none text-white"
-              >
-                {currentItem.title}
-              </motion.h1>
+        {/* DEGRADADO INFERIOR */}
+        <div
+          className="pointer-events-none absolute inset-x-0 bottom-0 z-[5] h-[75%]"
+          style={{
+            background:
+              "linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0.25) 85%, transparent 100%)",
+          }}
+        />
 
-              <motion.a
-                key={currentItem.button}
-                href={currentItem.link}
+        {/* TEXTO: UN POCO MÁS ABAJO */}
+        <div className="pointer-events-none absolute inset-0 z-10 flex items-end pb-16 lg:pb-24 lg:mb-16 lg:items-end px-6 pt-16 md:px-10 md:pt-20 lg:px-16">
+          <div className="w-full max-w-2xl">
+            <motion.h1
+              key={currentItem.title}
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3 }}
+              className="text-2xl font-semibold uppercase leading-tight text-white md:text-3xl lg:text-4xl"
+            >
+              {currentItem.title}
+            </motion.h1>
+
+            {currentItem.description && (
+              <motion.p
+                key={`${currentItem.title}-description`}
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: 0.05 }}
-                className="mt-5 inline-flex h-12 items-center gap-3 rounded-full bg-[#72000E] px-6 text-md font-semibold uppercase text-white"
+                className="mt-4 max-w-lg text-base leading-relaxed text-white md:text-lg"
+              >
+                {currentItem.description}
+              </motion.p>
+            )}
+
+            {currentItem.button && (
+              <motion.a
+                key={`${currentItem.title}-button`}
+                href={currentItem.link}
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: 0.1 }}
+                className="pointer-events-auto mt-5 inline-flex h-11 items-center rounded-full bg-[#72000E] px-6 text-sm font-semibold uppercase text-white transition-colors hover:bg-[#5E0010]"
               >
                 {currentItem.button}
               </motion.a>
-            </div>
-
-            {/* Columna derecha */}
-            <div className="max-w-xl md:ml-auto">
-              <p className="text-sm leading-relaxed text-white uppercase md:text-base">
-                Stix reúne tres suplementos funcionales, Elegí el momento que
-                necesitás:
-              </p>
-
-              {/*  <div className="mt-5 flex flex-wrap gap-2">
-                <span className="rounded-full border uppercase font-semibold border-white/20 bg-white/10 px-4 py-2 text-xs text-white backdrop-blur-md">
-                  Foco sostenido
-                </span>
-
-                <span className="rounded-full border uppercase font-semibold border-white/20 bg-white/10 px-4 py-2 text-xs text-white backdrop-blur-md">
-                  Hidratación efectiva
-                </span>
-
-                <span className="rounded-full border uppercase font-semibold border-white/20 bg-white/10 px-4 py-2 text-xs text-white backdrop-blur-md">
-                  Descanso reparador
-                </span>
-              </div> */}
-              <div className="mt-5 flex flex-wrap gap-1.5 sm:gap-2">
-                <span className="rounded-full border border-white/20 bg-white/10 px-2.5 py-1.5 text-[9px] font-semibold uppercase text-white backdrop-blur-md sm:px-4 sm:py-2 sm:text-xs">
-                  Foco sostenido
-                </span>
-
-                <span className="rounded-full border border-white/20 bg-white/10 px-2.5 py-1.5 text-[9px] font-semibold uppercase text-white backdrop-blur-md sm:px-4 sm:py-2 sm:text-xs">
-                  Hidratación efectiva
-                </span>
-
-                <span className="rounded-full border border-white/20 bg-white/10 px-2.5 py-1.5 text-[9px] font-semibold uppercase text-white backdrop-blur-md sm:px-4 sm:py-2 sm:text-xs">
-                  Descanso reparador
-                </span>
-              </div>
-            </div>
+            )}
           </div>
         </div>
 
-        {/* Dots */}
+        {/* PILLS GLASS: FIJAS ABAJO A LA IZQUIERDA */}
+        <div className="hidden lg:block absolute bottom-14 left-6 z-20 flex flex-wrap items-center gap-3 md:left-10 lg:left-16">
+          <GlassPill
+            icon={Sun}
+            text="Sharp - Foco sostenido"
+            defaultOpen={true}
+          />
+
+          <GlassPill
+            icon={Moon}
+            text="Reset - Descanso reparador"
+            defaultOpen={true}
+          />
+        </div>
+
+        {/* DOTS */}
         <div className="absolute bottom-6 left-1/2 z-20 flex -translate-x-1/2 gap-2">
           {items.map((item, i) => (
             <button
               type="button"
               key={item.id}
               onClick={() => setIndex(i)}
+              aria-label={`Ir a la diapositiva ${i + 1}`}
               className={`h-2 rounded-full transition-all ${
                 i === index ? "w-8 bg-white" : "w-2 bg-white/50"
               }`}

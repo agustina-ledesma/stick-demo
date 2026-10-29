@@ -76,7 +76,7 @@ function WhatsappIcon() {
 
 export default function Footer() {
   return (
-    <footer className="rounded-t-4xl bg-[#72000e] px-6 pb-10 pt-20 text-white md:px-20">
+    <footer className=" bg-[#72000e] px-6 pb-10 pt-20 text-white md:px-20">
       <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-12 lg:grid-cols-[1.1fr_1.4fr] lg:gap-16">
         {/* IZQUIERDA — LOGO + TAGLINE + DISCLAIMER */}
         <div className="flex flex-col gap-10">
